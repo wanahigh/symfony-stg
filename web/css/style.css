@@ -1,5 +1,43 @@
 /*!*HEADER*!------------------------------------*/
 
 .nav-extended{
-    height:150px!important;
+    height:100px!important;
+    margin-bottom: 15%!important;
+}
+
+ul>li>a{
+    color:black;
+}
+
+ul>li:hover{
+    background-color:black;
+}
+
+ul>li>a:hover{
+    color:white;
+}
+
+
+
+/*FOOTER-------------------------------*/
+.page-footer
+{
+    margin-top:25%;
+}
+
+
+
+/*PreLoader----------------------------------------*/
+.preloader-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }

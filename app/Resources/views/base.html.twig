@@ -22,7 +22,7 @@
     <div class="nav-wrapper">
         <a href="#!" class="brand-logo"><img src="{{ asset('../../../images/logo-filiere-spmeca-01.png') }}"  /></a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="/Filiale">La Filiaire</a></li>
+            <li><a class="hover" href="/Filiale">La Filiaire</a></li>
             <li><a href="/Work">Les Travaux</a></li>
             <li><a href="/entity_actor">Les Acteurs</a></li>
             <li><a href="/entity_advert">L'actu</a></li>
@@ -39,19 +39,11 @@
         </ul>
     </div>
     <div class="nav-content">
-        <span class="nav-title">Title</span>
-        <a class="btn-floating btn-large halfway-fab waves-effect waves-light teal">
-            <i class="material-icons">add</i>
-        </a>
+        <span class="nav-title"></span>
     </div>
 </nav>
-        </div>
-<style>
-    .page-footer
-    {
-        margin-top:25%;
-    }
-</style>
+</div>
+
 
 
 
@@ -64,7 +56,7 @@
 {% endfor %}
 {% block body %}{% endblock %}
 
-<footer class="page-footer #00e676 green accent-3">
+<footer class="page-footer black">
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
@@ -91,19 +83,7 @@
     </div>
 </footer>
 {#-------------------------------------------------------------------#}
-<style>.preloader-background {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #eee;
 
-        position: fixed;
-        z-index: 100;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    }</style>
 
 
 
