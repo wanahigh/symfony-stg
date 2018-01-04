@@ -1,22 +1,18 @@
 /*!*HEADER*!------------------------------------*/
 
+
 .nav-extended{
+    position:absolute;
     height:100px!important;
-    margin-bottom: 15%!important;
+}
+
+ul>li>a:hover{
+    color:#84bd00;
 }
 
 ul>li>a{
     color:black;
 }
-
-ul>li:hover{
-    background-color:#84bd00;
-}
-
-ul>li>a:hover{
-    color:white;
-}
-
 .button-collapse{
     color:black!important;
 }
@@ -31,6 +27,11 @@ ul>li>a:hover{
 
 .chip{
     background-color: #84bd00!important;
+}
+
+.chip:hover{
+    background-color: black!important;
+
 }
 
 
@@ -51,4 +52,14 @@ ul>li>a:hover{
 
 
 
+#pole1{
+    float: left;
+    max-width:98%;
 
+}
+.header{
+    color:#006ba6;
+}
+h4{
+ justify-items: auto;
+}

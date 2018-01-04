@@ -19,7 +19,7 @@ assetic:
         material_icons:
             inputs:
                  - https://fonts.googleapis.com/icon?family=Material+Icons
-    bundles: [    MaterializeBundle ]
+    bundles: [ MaterializeBundle ]
 
 
 
@@ -113,8 +113,3 @@ knp_paginator:
 materialize:
         local_cdn: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'
 
-doctrine_migrations:
-    dir_name: "%kernel.root_dir%/DoctrineMigrations" # Nom du dossier d'enregistrement des migrations.
-    namespace: App\DoctrineMigrations                # namespaces des fichiers qui seront crées.
-    table_name: migration_versions                   # Nom de la table d'enregistrement des versions de migrations
-    name: App Migrations
