@@ -10,7 +10,7 @@ ul>li>a{
 }
 
 ul>li:hover{
-    background-color:black;
+    background-color:#84bd00;
 }
 
 ul>li>a:hover{
@@ -25,8 +25,13 @@ ul>li>a:hover{
 .page-footer
 {
     margin-top:25%;
+    background-color: #006ba6!important;
+    color:white;
 }
 
+.chip{
+    background-color: #84bd00!important;
+}
 
 
 /*PreLoader----------------------------------------*/
@@ -43,8 +48,6 @@ ul>li>a:hover{
     right: 0;
     bottom: 0;
 }
-
-
 
 
 

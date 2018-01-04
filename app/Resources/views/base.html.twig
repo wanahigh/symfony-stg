@@ -29,7 +29,7 @@
             <li><a href="/entity_actor">Les Acteurs</a></li>
             <li><a href="/entity_advert">L'actu</a></li>
             <li><a href="/contact">Contacts</a></li>
-            <div class="chip black">
+            <div class="chip">
                 {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                 {#{{ app.user.username }}#}
 
@@ -58,7 +58,7 @@
         <a href="{{ path('fos_user_security_logout') }}">Déconnexion</a>
         {% else %}
         <a href="{{ path('fos_user_security_login') }}">Connexion</a>
-        {% endif %}</a></li>
+        {% endif %}</a>
 </ul>
 
 
@@ -72,7 +72,7 @@
 {% endfor %}
 {% block body %}{% endblock %}
 
-<footer class="page-footer black">
+<footer class="page-footer #84bd00">
     <div class="container">
         <div class="row">
             <div class="col l6 s12">

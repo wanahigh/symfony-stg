@@ -5,41 +5,14 @@ namespace Acme\ActuBundle\Controller\Entity;
 use Acme\ActuBundle\Entity\Entity\Advert;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
-
-
+use Acme\ActuBundle\Form\Entity\CommentType;
+use Acme\ActuBundle\Entity\Entity\Comment;
 /**
  * Advert controller.
  *
  */
 class AdvertController extends Controller
 {
-
-    /**
-     * Saves a comment into the database.
-     *
-     * @param \Acme\ActuBundle\Form\Entity\Comment $comment The comment to save
-     */
-    public function save(Comment $comment) {
-        $commentData = array(
-            'art_id' => $comment->getArticle()->getId(),
-            'usr_id' => $comment->getAuthor()->getId(),
-            'com_content' => $comment->getContent()
-        );
-
-        if ($comment->getId()) {
-            // The comment has already been saved : update it
-            $this->getDb()->update('t_comment', $commentData, array('com_id' => $comment->getId()));
-        } else {
-            // The comment has never been saved : insert it
-            $this->getDb()->insert('t_comment', $commentData);
-            // Get the id of the newly created comment and set it on the entity.
-            $id = $this->getDb()->lastInsertId();
-            $comment->setId($id);
-        }
-    }
-
-
-
     /**
      * Lists all advert entities.
      *
@@ -51,9 +24,9 @@ class AdvertController extends Controller
         $listeadverts = $em->getRepository('AcmeActuBundle:Entity\Advert')->findAll();
         $adverts = $this->get('knp_paginator')->paginate(
             $listeadverts,
-                                    /*PAGINATION*/
+            /*PAGINATION*/
             $request->query->get('page', 1)/*le numéro de la page à afficher*/,
-            2/*nbre d'éléments par page*/
+            5/*nbre d'éléments par page*/
         );
         return $this->render('entity/advert/index.html.twig', array(
             'adverts' => $adverts,));
@@ -153,7 +126,6 @@ class AdvertController extends Controller
         return $this->createFormBuilder()
             ->setAction($this->generateUrl('entity_advert_delete', array('id' => $advert->getId())))
             ->setMethod('DELETE')
-            ->getForm()
-        ;
+            ->getForm();
     }
 }

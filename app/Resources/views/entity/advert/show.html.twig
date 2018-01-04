@@ -3,7 +3,7 @@
 {% block body %}
     <h1>Advert</h1>
 
-    <table  class="comment" id="comment_1">
+    <table>
         <tbody>
             <tr>
                 <th>Id</th>
@@ -38,10 +38,15 @@
 
     <ul>
         <li>
-            <a href="{{ path('entity_advert_index') }}" class="btn-large blue" >retour</a>
+            <a href="{{ path('entity_advert_index') }}" class="btn-large blue" >Retour</a>
         </li>
         <li>
-            <a href="{{ path('entity_advert_edit', { 'id': advert.id }) }}">Edit</a>
+            <a  class="btn-large green"href="{{ path('entity_advert_edit', { 'id': advert.id }) }}">Editer</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input class="btn red" type="submit" value="Delete">
+            {{ form_end(delete_form) }}
         </li>
     </ul>
 {% endblock %}

@@ -5,25 +5,12 @@
     <div style="margin-left: 12.5%;" class=" container">
     <h1>L'Actualité</h1>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Date</th>
-                <th>Title</th>
-                <th>Author</th>
-                <th>Content</th>
-                <th>Image</th>
-                <th>Categories</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody class="card panel">
+ <table>
+     <tbody class="">
         {% for advert in adverts %}
 
             <tr>
-                <td><img src="{{ asset('uploads/images/' ~ advert.image) }}" height="150px" width="300px" ></td>
-                <td><a href="{{ path('entity_advert_show', { 'id': advert.id }) }}">{{ advert.id }}</a></td>
+                <td><a href="{{ path('entity_advert_show',{ 'id': advert.id }) }}"><img src="{{ asset('uploads/images/' ~ advert.image) }}" height="150px" width="300px" ></a></td>
                 <td>{% if advert.date %}{{ advert.date|date('Y-m-d H') }}{% endif %}</td>
                 <td>{{ advert.title }}</td>
                 <td>{{ advert.author }}</td>
@@ -45,7 +32,6 @@
                     </ul>
                 </td>
             </tr>
-            <span class="reply">Repondre</span>
 
         {% endfor %}
 

@@ -1018,7 +1018,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>NjpT0KRlswE1Eplmkhk5Br</argument>
+      <argument>jqmy14qQ2Jk-YxIhfpzZ69</argument>
       <argument>/var/www/html/symfony-stg/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -1028,7 +1028,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>NjpT0KRlswE1Eplmkhk5Br</argument>
+      <argument>jqmy14qQ2Jk-YxIhfpzZ69</argument>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       </call>
@@ -2991,12 +2991,12 @@
     </service>
     <service id="security.authentication.listener.anonymous.main" class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
       <argument type="service" id="security.token_storage"/>
-      <argument>5a4ddbb91e8f42.62100718</argument>
+      <argument>5a4e2dadf2efb4.52808587</argument>
       <argument type="service" id="monolog.logger.security" on-invalid="null"/>
       <argument type="service" id="security.authentication.manager"/>
     </service>
     <service id="security.authentication.provider.anonymous.main" class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-      <argument>5a4ddbb91e8f42.62100718</argument>
+      <argument>5a4e2dadf2efb4.52808587</argument>
     </service>
     <service id="security.exception_listener.main" class="Symfony\Component\Security\Http\Firewall\ExceptionListener" public="false">
       <argument type="service" id="security.token_storage"/>
@@ -4029,7 +4029,6 @@
       <call method="setEntityNamespaces">
         <argument type="collection">
           <argument key="AppBundle">AppBundle\Entity</argument>
-          <argument key="AcmeContactBundle">Acme\ContactBundle\Entity</argument>
           <argument key="AcmeActeurBundle">Acme\ActeurBundle\Entity</argument>
           <argument key="AcmeActuBundle">Acme\ActuBundle\Entity</argument>
         </argument>
@@ -4082,7 +4081,6 @@
     </service>
     <service id="doctrine.orm.default_yml_metadata_driver" class="Doctrine\ORM\Mapping\Driver\SimplifiedYamlDriver" public="false">
       <argument type="collection">
-        <argument key="/var/www/html/symfony-stg/src/Acme/ContactBundle/Resources/config/doctrine">Acme\ContactBundle\Entity</argument>
         <argument key="/var/www/html/symfony-stg/src/Acme/ActeurBundle/Resources/config/doctrine">Acme\ActeurBundle\Entity</argument>
         <argument key="/var/www/html/symfony-stg/src/Acme/ActuBundle/Resources/config/doctrine">Acme\ActuBundle\Entity</argument>
       </argument>
@@ -4094,10 +4092,6 @@
       <call method="addDriver">
         <argument type="service" id="doctrine.orm.default_annotation_metadata_driver"/>
         <argument>AppBundle\Entity</argument>
-      </call>
-      <call method="addDriver">
-        <argument type="service" id="doctrine.orm.default_yml_metadata_driver"/>
-        <argument>Acme\ContactBundle\Entity</argument>
       </call>
       <call method="addDriver">
         <argument type="service" id="doctrine.orm.default_yml_metadata_driver"/>
@@ -5110,7 +5104,7 @@
     <service id="cache.system.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <argument>99+nS73aJH</argument>
       <argument>0</argument>
-      <argument>NjpT0KRlswE1Eplmkhk5Br</argument>
+      <argument>jqmy14qQ2Jk-YxIhfpzZ69</argument>
       <argument>/var/www/html/symfony-stg/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -5118,7 +5112,7 @@
     <service id="cache.validator.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <argument>A3sgIyWMy+</argument>
       <argument>0</argument>
-      <argument>NjpT0KRlswE1Eplmkhk5Br</argument>
+      <argument>jqmy14qQ2Jk-YxIhfpzZ69</argument>
       <argument>/var/www/html/symfony-stg/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -5126,7 +5120,7 @@
     <service id="cache.serializer.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <argument>bMOJT+o15O</argument>
       <argument>0</argument>
-      <argument>NjpT0KRlswE1Eplmkhk5Br</argument>
+      <argument>jqmy14qQ2Jk-YxIhfpzZ69</argument>
       <argument>/var/www/html/symfony-stg/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -5134,7 +5128,7 @@
     <service id="cache.annotations.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <argument>tbqYzxIxzm</argument>
       <argument>0</argument>
-      <argument>NjpT0KRlswE1Eplmkhk5Br</argument>
+      <argument>jqmy14qQ2Jk-YxIhfpzZ69</argument>
       <argument>/var/www/html/symfony-stg/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>

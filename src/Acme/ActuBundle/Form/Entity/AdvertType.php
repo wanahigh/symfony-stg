@@ -15,6 +15,7 @@ class AdvertType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder->add('date')->add('title')->add('author')->add('content')->add('image', FileType::class, array('label' => 'Image(JPG)'))->add('categories');
+
     }/**
      * {@inheritdoc}
      */
@@ -32,6 +33,5 @@ class AdvertType extends AbstractType
     {
         return 'acme_actubundle_entity_advert';
     }
-
 
 }
