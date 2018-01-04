@@ -1,0 +1,34 @@
+Acme\ContactBundle\Entity\Entity\Contact:
+    type: entity
+    table: contact
+    repositoryClass: Acme\ContactBundle\Repository\Entity\ContactRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nom:
+            type: string
+            column: Nom
+        prenom:
+            type: string
+            column: Prenom
+        organisation:
+            type: string
+            length: 255
+            column: Organisation
+        email:
+            type: string
+            length: '50'
+            column: Email
+        sujet:
+            type: string
+            length: 255
+            column: Sujet
+        message:
+            type: string
+            length: 255
+            column: Message
+    lifecycleCallbacks: {  }

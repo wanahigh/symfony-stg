@@ -1,0 +1,72 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Actor</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ actor.id }}</td>
+            </tr>
+            <tr>
+                <th>Entreprise</th>
+                <td>{{ actor.entreprise }}</td>
+            </tr>
+            <tr>
+                <th>Categories</th>
+                <td>{{ actor.categories }}</td>
+            </tr>
+            <tr>
+                <th>Dirigeant</th>
+                <td>{{ actor.dirigeant }}</td>
+            </tr>
+            <tr>
+                <th>Adresse</th>
+                <td>{{ actor.adresse }}</td>
+            </tr>
+            <tr>
+                <th>Tel</th>
+                <td>{{ actor.tel }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ actor.email }}</td>
+            </tr>
+            <tr>
+                <th>Siteweb</th>
+                <td>{{ actor.siteweb }}</td>
+            </tr>
+            <tr>
+                <th>Facebook</th>
+                <td>{{ actor.facebook }}</td>
+            </tr>
+            <tr>
+                <th>Linkedin</th>
+                <td>{{ actor.linkedin }}</td>
+            </tr>
+            <tr>
+                <th>Twitter</th>
+                <td>{{ actor.twitter }}</td>
+            </tr>
+            <tr>
+                <th>Instagram</th>
+                <td>{{ actor.instagram }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('entity_actor_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('entity_actor_edit', { 'id': actor.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

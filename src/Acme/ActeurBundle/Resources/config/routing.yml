@@ -1,0 +1,5 @@
+acme_acteur_entity_actor:
+    resource: "@AcmeActeurBundle/Resources/config/routing/entity_actor.php"
+    prefix:   /entity_actor
+
+

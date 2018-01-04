@@ -1,0 +1,44 @@
+Acme\ActeurBundle\Entity\Entity\Actor:
+    type: entity
+    table: null
+    repositoryClass: Acme\ActeurBundle\Repository\Entity\ActorRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        entreprise:
+            type: string
+            length: 255
+        categories:
+            type: string
+            length: 255
+        dirigeant:
+            type: string
+            length: 255
+        adresse:
+            type: string
+            length: 255
+        tel:
+            type: integer
+        email:
+            type: string
+            length: 255
+        siteweb:
+            type: string
+            length: 255
+        facebook:
+            type: string
+            length: 255
+        linkedin:
+            type: string
+            length: 255
+        twitter:
+            type: string
+            length: 255
+        instagram:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

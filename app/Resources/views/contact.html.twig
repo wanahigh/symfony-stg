@@ -1,0 +1,36 @@
+{% extends '::base.html.twig' %}
+{% block body %}
+    {# contact.html.twig #}
+<div class="container center">
+    {{ form_start(form) }}
+
+    <div>
+        <input type="text" required id="form.subject" placeholder="Votre sujet">
+        {{ form_errors(form.subject) }}
+    </div>
+    <div>
+        <input type="text" required id="form.name" placeholder="Votre nom">
+        {{ form_errors(form.name) }}
+    </div>
+    <div>
+        <input type="email" required id="form.email" placeholder="exemple@exemple.com">
+        {{ form_errors(form.email) }}
+    </div>
+    <div>
+        <input type="text" required id="form.message" placeholder="Message">
+        {{ form_errors(form.message) }}
+    </div>
+
+    {# Render CSRF token etc .#}
+    <div style="display:none">
+        {{ form_rest(form) }}
+    </div>
+
+    <input class="btn-large pink" type="submit" value="Submit" onclick="Materialize.toast('Message envoyé !', 4000)">
+    {{ form_end(form) }}
+
+</div>
+
+{% endblock %}
+
+

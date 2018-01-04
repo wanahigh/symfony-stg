@@ -1,0 +1,29 @@
+Acme\ActuBundle\Entity\Entity\Advert:
+    type: entity
+    table: null
+    repositoryClass: Acme\ActuBundle\Repository\Entity\AdvertRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        date:
+            type: datetime
+        title:
+            type: string
+            length: 255
+        author:
+            type: string
+            length: 255
+        content:
+            type: string
+            length: 255
+        image:
+            type: string
+            length: 255
+        categories:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }
