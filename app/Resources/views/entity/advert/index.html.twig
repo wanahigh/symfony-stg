@@ -1,5 +1,7 @@
 {% extends 'base.html.twig' %}
-
+{% block stylesheet %}
+    <link rel="stylesheet" href="{{ asset('./Advert.css') }}">
+{% endblock  %}
 {% block body %}
 
     <div style="margin-left: 12.5%;" class=" container">
@@ -20,15 +22,17 @@
         </thead>
         <tbody class="card panel">
         {% for advert in adverts %}
+
             <tr>
                 <td><img src="{{ asset('uploads/images/' ~ advert.image) }}" height="150px" width="300px" ></td>
                 <td><a href="{{ path('entity_advert_show', { 'id': advert.id }) }}">{{ advert.id }}</a></td>
                 <td>{% if advert.date %}{{ advert.date|date('Y-m-d H') }}{% endif %}</td>
                 <td>{{ advert.title }}</td>
                 <td>{{ advert.author }}</td>
-                <td>{{ advert.content }}</td>
+                <td >{{ advert.content }}</td>
 
-                <td>{{ advert.categories }}</td>
+                <td>{{ advert.categories }}</td></br>
+
                 <td>
                     <ul>
                         <li>
@@ -43,7 +47,11 @@
                     </ul>
                 </td>
             </tr>
+            <span class="reply">Repondre</span>
+
         {% endfor %}
+
+
         </tbody>
         <hr>
     </table>
@@ -54,7 +62,9 @@
         </li>
     </ul>
 </div>
-</div>
-
     <div class="text-center">{{ knp_pagination_render(adverts) }}</div>
+
+
+
+
 {% endblock %}

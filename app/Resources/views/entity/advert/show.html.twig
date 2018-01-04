@@ -3,7 +3,7 @@
 {% block body %}
     <h1>Advert</h1>
 
-    <table>
+    <table  class="comment" id="comment_1">
         <tbody>
             <tr>
                 <th>Id</th>
@@ -35,7 +35,10 @@
             </tr>
         </tbody>
     </table>
-
+    <span class="reply">Reply</span>
+    <form id="reply-comment">
+        <textarea placeholder="Ton commentaire"></textarea>
+    </form>
     <ul>
         <li>
             <a href="{{ path('entity_advert_index') }}" class="btn-large blue" >retour</a>
@@ -49,4 +52,45 @@
             {{ form_end(delete_form) }}
         </li>
     </ul>
+
+
+
+    <style>
+        a, .reply, h1 {
+            color: grey;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .reply {
+            font-size: 11px;
+            float: right;
+            display: block;
+        }
+        .comments-list {
+            background: #f7f7f7;
+            border: 1px solid #eee;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .comment {
+            background: #fefefe;
+            padding: 5px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        textarea {
+            width: 100%;
+        }
+        #reply-comment {
+            display: none;
+        }</style>
+
+    <script>$(".reply").click(function () {
+            if ($(this).next("#reply-comment").is(":visible")) {
+                $(this).next("#reply-comment").slideUp();
+            } else {
+                $(this).next("#reply-comment").slideDown();
+            }
+        });
+    </script>
 {% endblock %}

@@ -10,6 +10,7 @@
          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href={{ asset('https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css') }}>
         <link rel="stylesheet" href="{{ asset('../../../css/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('../../../js/index.js') }}">
 {% endblock %}
 
 
@@ -20,6 +21,7 @@
 <div class="navbar-fixed">
 <nav class="nav-extended white">
     <div class="nav-wrapper">
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
         <a href="#!" class="brand-logo"><img src="{{ asset('../../../images/logo-filiere-spmeca-01.png') }}"  /></a>
         <ul class="right hide-on-med-and-down">
             <li><a class="hover" href="/Filiale">La Filiaire</a></li>
@@ -43,7 +45,21 @@
     </div>
 </nav>
 </div>
+<ul id="slide-out" class="side-nav">
+    <li><a class="hover" href="/Filiale">La Filiaire</a></li>
+    <li><a href="/Work">Les Travaux</a></li>
+    <li><a href="/entity_actor">Les Acteurs</a></li>
+    <li><a href="/entity_advert">L'actu</a></li>
+    <li><a href="/contact">Contacts</a></li>
+        <li><a>
+        {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+        {#{{ app.user.username }}#}
 
+        <a href="{{ path('fos_user_security_logout') }}">Déconnexion</a>
+        {% else %}
+        <a href="{{ path('fos_user_security_login') }}">Connexion</a>
+        {% endif %}</a></li>
+</ul>
 
 
 
@@ -76,7 +92,7 @@
     </div>
     <div class="footer-copyright">
         <div class="container">
-            © 2014 Copyright Text
+            © 2017 Copyright Text
 
             <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
         </div>
@@ -110,17 +126,14 @@
         $('.preloader-wrapper')
             .delay(1700)
             .fadeOut();
-    });</script>
-<script>
+    });
+
     // Initialize collapse button
     $(".button-collapse").sideNav();
     // Initialize collapsible (uncomment the line below if you use the dropdown variation)
     //$('.collapsible').collapsible();
 
-</script>
-
-
-
+    </script>
 {% block javascripts %}
 
 {% endblock %}

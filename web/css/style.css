@@ -17,7 +17,9 @@ ul>li>a:hover{
     color:white;
 }
 
-
+.button-collapse{
+    color:black!important;
+}
 
 /*FOOTER-------------------------------*/
 .page-footer
@@ -41,3 +43,9 @@ ul>li>a:hover{
     right: 0;
     bottom: 0;
 }
+
+
+
+
+
+
