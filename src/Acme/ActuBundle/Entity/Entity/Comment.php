@@ -1,73 +1,112 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: fabien
- * Date: 03/01/18
- * Time: 14:47
- */
 
 namespace Acme\ActuBundle\Entity\Entity;
 
-use Doctrine\ORM\Mapping as ORM;
-
 /**
- * @ORM\Entity(repositoryClass="Acme\ActuBundle\Repository\AdvertRepository")
- * @ORM\Table(name="comment")
- * @ORM\HasLifecycleCallbacks()
+ * Comment
  */
 class Comment
 {
     /**
-     * @ORM\Id
-     * @ORM\Column(type="integer")
-     * @ORM\GeneratedValue(strategy="AUTO")
+     * @var int
      */
-    protected $id;
+    private $id;
 
     /**
-     * @ORM\Column(type="string")
+     * @var string
      */
-    protected $user;
+    private $pseudo;
 
     /**
-     * @ORM\Column(type="text")
+     * @var string
      */
-    protected $comment;
+    private $title;
 
     /**
-     * @ORM\Column(type="boolean")
+     * @var string
      */
-    protected $approved;
+    private $comment;
+
 
     /**
-     * @ORM\ManyToOne(targetEntity="Advert", inversedBy="comments")
-     * @ORM\JoinColumn(name="Advert_id", referencedColumnName="id")
+     * Get id.
+     *
+     * @return int
      */
-    protected $blog;
+    public function getId()
+    {
+        return $this->id;
+    }
 
     /**
-     * @ORM\Column(type="datetime")
+     * Set pseudo.
+     *
+     * @param string $pseudo
+     *
+     * @return Comment
      */
-    protected $created;
+    public function setPseudo($pseudo)
+    {
+        $this->pseudo = $pseudo;
+
+        return $this;
+    }
 
     /**
-     * @ORM\Column(type="datetime")
+     * Get pseudo.
+     *
+     * @return string
      */
-    protected $updated;
+    public function getPseudo()
+    {
+        return $this->pseudo;
+    }
 
-//    public function __construct()
-//    {
-//        $this->setCreated(new \DateTime());
-//        $this->setUpdated(new \DateTime());
-//
-//        $this->setApproved(true);
-//    }
-//
-//    /**
-//     * @ORM\preUpdate
-//     */
-//    public function setUpdatedValue()
-//    {
-//        $this->setUpdated(new \DateTime());
-//    }
+    /**
+     * Set title.
+     *
+     * @param string $title
+     *
+     * @return Comment
+     */
+    public function setTitle($title)
+    {
+        $this->title = $title;
+
+        return $this;
+    }
+
+    /**
+     * Get title.
+     *
+     * @return string
+     */
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    /**
+     * Set comment.
+     *
+     * @param string $comment
+     *
+     * @return Comment
+     */
+    public function setComment($comment)
+    {
+        $this->comment = $comment;
+
+        return $this;
+    }
+
+    /**
+     * Get comment.
+     *
+     * @return string
+     */
+    public function getComment()
+    {
+        return $this->comment;
+    }
 }

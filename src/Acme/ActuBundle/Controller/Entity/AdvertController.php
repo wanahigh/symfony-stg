@@ -84,6 +84,7 @@ class AdvertController extends Controller
         ));
     }
 
+
     /**
      * Finds and displays a advert entity.
      *
@@ -95,6 +96,7 @@ class AdvertController extends Controller
         return $this->render('entity/advert/show.html.twig', array(
             'advert' => $advert,
             'delete_form' => $deleteForm->createView(),
+
         ));
     }
 
