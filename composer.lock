@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c7c1e56afcb523c50ed2d0c973635dcd",
-    "content-hash": "13d0ca671898362669ac94467ab0e704",
+    "hash": "749f9e8a85fe043d35bd958643cf5458",
+    "content-hash": "731623e27d8d3b15b42d5c2991ea3b77",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -1462,6 +1462,51 @@
                 "parameters management"
             ],
             "time": "2015-11-10 17:04:01"
+        },
+        {
+            "name": "jacobbennett/sendyphp",
+            "version": "v1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JacobBennett/SendyPHP.git",
+                "reference": "cc43cad8c345a013671f44c61db722695877a8f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JacobBennett/SendyPHP/zipball/cc43cad8c345a013671f44c61db722695877a8f2",
+                "reference": "cc43cad8c345a013671f44c61db722695877a8f2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*",
+                "squizlabs/php_codesniffer": "1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SendyPHP\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jacob Bennett",
+                    "email": "me@jakebennett.net",
+                    "homepage": "http://jakebennett.net"
+                }
+            ],
+            "description": "A PHP Library for interfacing with the Sendy newsletter system (http://sendy.co)",
+            "keywords": [
+                "Sendy",
+                "newsletter"
+            ],
+            "time": "2016-03-10 16:47:44"
         },
         {
             "name": "jdorn/sql-formatter",

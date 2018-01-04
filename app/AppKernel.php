@@ -30,7 +30,6 @@ class AppKernel extends Kernel
             new Curiosity26\AngularMaterialBundle\Curiosity26AngularMaterialBundle(),
             new Evheniy\MaterializeBundle\MaterializeBundle(),
             new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),
-
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

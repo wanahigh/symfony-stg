@@ -34,6 +34,7 @@ final class Versions
   'friendsofsymfony/user-bundle' => 'v2.0.2@2fc8a023d7ab482321cf7ec810ed49eab40eb50f',
   'gedmo/doctrine-extensions' => 'v2.4.32@a268224b312353be62d72e6390a286f4166a7542',
   'incenteev/composer-parameter-handler' => 'v2.1.2@d7ce7f06136109e81d1cb9d57066c4d4a99cf1cc',
+  'jacobbennett/sendyphp' => 'v1.3@cc43cad8c345a013671f44c61db722695877a8f2',
   'jdorn/sql-formatter' => 'v1.2.17@64990d96e0959dff8e059dfcdc1af130728d92bc',
   'jms/metadata' => '1.6.0@6a06970a10e0a532fb52d3959547123b84a3b3ab',
   'jms/parser-lib' => '1.0.0@c509473bc1b4866415627af0e1c6cc8ac97fa51d',
@@ -76,7 +77,7 @@ final class Versions
   'doctrine/doctrine-fixtures-bundle' => '3.0.2@7fc29d2b18c61ed99826b21fbfd1ff9969cc2e7f',
   'sensio/generator-bundle' => 'v3.1.7@28cbaa244bd0816fd8908b93f90380bcd7b67a65',
   'symfony/phpunit-bridge' => 'v3.4.2@074c2e205c849a5fb37b1c24ade03cc975ac8079',
-  'akatosh/elbuen' => 'dev-master@610ddf18c323234e0274a2e07862a9be8acf953d',
+  'akatosh/elbuen' => 'dev-master@61cd3d9a90382ee90ace3b68bed953dbcc4cfe1b',
 );
 
     private function __construct()

@@ -1,5 +1,5 @@
 {
-    "name": "akatosh/elbuen",
+    "name": "akatosh",
     "license": "proprietary",
     "type": "project",
     "autoload": {
@@ -45,7 +45,8 @@
         "symfony/swiftmailer-bundle": "^2.6.4",
         "symfony/symfony": "3.4.*",
         "twig/twig": "^1.0||^2.0",
-        "ibrows/newsletter-bundle": "*"
+        "jacobbennett/sendyphp": "1.3.*"
+
     },
     "require-dev": {
         "doctrine/doctrine-fixtures-bundle": "^3.0",
