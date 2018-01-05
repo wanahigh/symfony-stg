@@ -1,4 +1,9 @@
 /*!*HEADER*!------------------------------------*/
+.sidenav-header{
+    background-image:url("{{ asset('../../../images/logo-filiere-spmeca-01.png') }}");
+    width: auto;
+}
+
 .navbar-fixed {
     top: -64px;
 }
