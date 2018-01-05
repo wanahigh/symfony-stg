@@ -1,54 +1,122 @@
-{% extends 'base.html.twig' %}
+{% extends "::base.html.twig" %}
 
 {% block body %}
 
-    <div style="margin-left: 12.5%;" class=" container">
-    <h1>L'Actualité</h1>
 
- <table>
-     <tbody class="">
+
+<div class="container">
         {% for advert in adverts %}
+<table>
+    <section>
+        <article id="two card">
+            <h1> {{ advert.title }}</h1>
+            <p>    <a href="{{ path('entity_advert_show',{ 'id': advert.id }) }}"><img src="{{ asset('uploads/images/' ~ advert.image) }}" height="150px" width="300px" ></a>
+                {% if advert.date %}{{ advert.date|date('Y-m-d H') }}{% endif %}
 
-            <tr>
-                <td><a href="{{ path('entity_advert_show',{ 'id': advert.id }) }}"><img src="{{ asset('uploads/images/' ~ advert.image) }}" height="150px" width="300px" ></a></td>
-                <td>{% if advert.date %}{{ advert.date|date('Y-m-d H') }}{% endif %}</td>
-                <td>{{ advert.title }}</td>
-                <td>{{ advert.author }}</td>
-                <td >{{ advert.content }}</td>
+                {{ advert.author }}
+                {{ advert.content }} </p>
 
-                <td>{{ advert.categories }}</td></br>
-
-                <td>
-                    <ul>
-                        <li>
-                            <a class="btn-large blue" href="{{ path('entity_advert_show', { 'id': advert.id }) }}">show</a>
-                        </li>
-                        <li>
-
-                            <a class="btn-large red" href="{{ path('entity_advert_edit', { 'id': advert.id }) }}">edit</a>
+        </article>
+        <a class="btn-large blue" href="{{ path('entity_advert_new') }}">New</a>
 
 
-                        </li>
-                    </ul>
-                </td>
-            </tr>
 
-        {% endfor %}
+    </section>
 
-
-        </tbody>
-        <hr>
-    </table>
-
-    <ul>
-        <li>
-            <a class="btn-large blue" href="{{ path('entity_advert_new') }}">New</a>
-        </li>
-    </ul>
-</div>
-    <div class="text-center">{{ knp_pagination_render(adverts) }}</div>
+</table> {% endfor %}</div>  <div class="text-center">{{ knp_pagination_render(adverts) }}</div>
 
 
 
 
+    <style>@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+            -o-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+
+        html, body {
+            min-height: 100%;
+        }
+
+        body {
+            background-color:lightslategrey;
+            font-size: 15px;
+            color: #554E49;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+        }
+
+        h1 {
+            font-weight: 300;
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+
+        section {
+            position: relative;
+            margin-left: 4em;
+            max-width: 40em;
+            padding: 2.5em 0;
+        }
+        section:before {
+            height: 100%;
+            width: 1px;
+            background-color: red;
+            content: "";
+            position: absolute;
+            left: -2em;
+            top: 0;
+        }
+        section article {
+            position: relative;
+            background: #f5f6f6;
+            width: 100%;
+            padding: 1.333em;
+            margin-bottom: 2.5em;
+            transition: all 0.5s ease;
+        }
+        section article:last-child {
+            margin-bottom: 0;
+        }
+        section article:before {
+            content: "";
+            width: 1px;
+            height: 2.7em;
+            background: red;
+            position: absolute;
+            left: -1em;
+            top: -2.3em;
+            transform: rotate(-45deg);
+            transition: all 0.5s ease;
+        }
+        section article:after {
+            content: "";
+            width: 0.667em;
+            height: 0.667em;
+            position: absolute;
+            background: red;
+            top: 0;
+            left: 0;
+            transition: all 0.5s ease;
+        }
+        section article:hover {
+            box-shadow: 0 0 0 0.667em #554E49;
+        }
+        section article:hover:before, section article:hover:after {
+            background: #FAA718;
+        }
+    </style>
+    <script>$('a').click(function(){
+            $('html, body').animate({
+                scrollTop: $($(this).attr('href')).offset().top - 30
+            }, 500);
+            return false;
+        });</script>
 {% endblock %}
