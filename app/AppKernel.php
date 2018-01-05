@@ -20,7 +20,6 @@ class AppKernel extends Kernel
             new FOS\UserBundle\FOSUserBundle(),
             new Acme\AdminBundle\AcmeHomeBundle(),
             new Acme\ContactBundle\AcmeContactBundle(),
-            new Acme\ActeurBundle\AcmeActeurBundle(),
             new Acme\FilialeBundle\AcmeFilialeBundle(),
             new Acme\WorkBundle\AcmeWorkBundle(),
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
@@ -29,6 +28,7 @@ class AppKernel extends Kernel
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
             new Curiosity26\AngularMaterialBundle\Curiosity26AngularMaterialBundle(),
             new Evheniy\MaterializeBundle\MaterializeBundle(),
+            new Acme\ActeurBundle\AcmeActeurBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

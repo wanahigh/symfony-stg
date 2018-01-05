@@ -1,6 +1,10 @@
 {% extends '::base.html.twig' %}
 {% block body %}
-    {# contact.html.twig #}
+    <script src={{ asset('https://code.jquery.com/jquery-3.2.1.js') }} integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+
+    <h1 class="header">NOUS CONTACTER</h1>
+
 <div class="container center">
     {{ form_start(form) }}
 
@@ -30,7 +34,6 @@
     {{ form_end(form) }}
 
 </div>
-
 
 
 

@@ -77,7 +77,7 @@ final class Versions
   'doctrine/doctrine-fixtures-bundle' => '3.0.2@7fc29d2b18c61ed99826b21fbfd1ff9969cc2e7f',
   'sensio/generator-bundle' => 'v3.1.7@28cbaa244bd0816fd8908b93f90380bcd7b67a65',
   'symfony/phpunit-bridge' => 'v3.4.2@074c2e205c849a5fb37b1c24ade03cc975ac8079',
-  'akatosh' => 'dev-master@b49aacaaa941ea1ab596658323ca7f701b8451b7',
+  'akatosh' => 'dev-master@b9b304d2dad1b122b41a91007bb48f5fed695c46',
 );
 
     private function __construct()

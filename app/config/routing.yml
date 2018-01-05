@@ -1,3 +1,7 @@
+acme_acteur:
+    resource: "@AcmeActeurBundle/Resources/config/routing.yml"
+    prefix:   /
+
 acme_actu:
     resource: "@AcmeActuBundle/Resources/config/routing.yml"
     prefix:   /
@@ -8,10 +12,6 @@ acme_work:
 
 acme_filiale:
     resource: "@AcmeFilialeBundle/Resources/config/routing.yml"
-    prefix:   /
-
-acme_acteur:
-    resource: "@AcmeActeurBundle/Resources/config/routing.yml"
     prefix:   /
 
 acme_contact:

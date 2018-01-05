@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
   <parameters>
-    <parameter key="kernel.root_dir">/var/www/html/symfony-stg/app</parameter>
-    <parameter key="kernel.project_dir">/var/www/html/symfony-stg</parameter>
+    <parameter key="kernel.root_dir">/home/fabien/symfony-stg/app</parameter>
+    <parameter key="kernel.project_dir">/home/fabien/symfony-stg</parameter>
     <parameter key="kernel.environment">dev</parameter>
     <parameter key="kernel.debug">true</parameter>
     <parameter key="kernel.name">app</parameter>
-    <parameter key="kernel.cache_dir">/var/www/html/symfony-stg/var/cache/dev</parameter>
-    <parameter key="kernel.logs_dir">/var/www/html/symfony-stg/var/logs</parameter>
+    <parameter key="kernel.cache_dir">/home/fabien/symfony-stg/var/cache/dev</parameter>
+    <parameter key="kernel.logs_dir">/home/fabien/symfony-stg/var/logs</parameter>
     <parameter key="kernel.bundles" type="collection">
       <parameter key="FrameworkBundle">Symfony\Bundle\FrameworkBundle\FrameworkBundle</parameter>
       <parameter key="SecurityBundle">Symfony\Bundle\SecurityBundle\SecurityBundle</parameter>
@@ -20,7 +20,6 @@
       <parameter key="FOSUserBundle">FOS\UserBundle\FOSUserBundle</parameter>
       <parameter key="AcmeHomeBundle">Acme\AdminBundle\AcmeHomeBundle</parameter>
       <parameter key="AcmeContactBundle">Acme\ContactBundle\AcmeContactBundle</parameter>
-      <parameter key="AcmeActeurBundle">Acme\ActeurBundle\AcmeActeurBundle</parameter>
       <parameter key="AcmeFilialeBundle">Acme\FilialeBundle\AcmeFilialeBundle</parameter>
       <parameter key="AcmeWorkBundle">Acme\WorkBundle\AcmeWorkBundle</parameter>
       <parameter key="DoctrineFixturesBundle">Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle</parameter>
@@ -29,7 +28,7 @@
       <parameter key="KnpPaginatorBundle">Knp\Bundle\PaginatorBundle\KnpPaginatorBundle</parameter>
       <parameter key="Curiosity26AngularMaterialBundle">Curiosity26\AngularMaterialBundle\Curiosity26AngularMaterialBundle</parameter>
       <parameter key="MaterializeBundle">Evheniy\MaterializeBundle\MaterializeBundle</parameter>
-      <parameter key="DoctrineMigrationsBundle">Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle</parameter>
+      <parameter key="AcmeActeurBundle">Acme\ActeurBundle\AcmeActeurBundle</parameter>
       <parameter key="DebugBundle">Symfony\Bundle\DebugBundle\DebugBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
       <parameter key="SensioDistributionBundle">Sensio\Bundle\DistributionBundle\SensioDistributionBundle</parameter>
@@ -39,132 +38,127 @@
     <parameter key="kernel.bundles_metadata" type="collection">
       <parameter key="FrameworkBundle" type="collection">
         <parameter key="parent">null</parameter>
-        <parameter key="path">/var/www/html/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle</parameter>
+        <parameter key="path">/home/fabien/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle</parameter>
         <parameter key="namespace">Symfony\Bundle\FrameworkBundle</parameter>
       </parameter>
       <parameter key="SecurityBundle" type="collection">
         <parameter key="parent">null</parameter>
-        <parameter key="path">/var/www/html/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle</parameter>
+        <parameter key="path">/home/fabien/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle</parameter>
         <parameter key="namespace">Symfony\Bundle\SecurityBundle</parameter>
       </parameter>
       <parameter key="TwigBundle" type="collection">
         <parameter key="parent">null</parameter>
-        <parameter key="path">/var/www/html/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle</parameter>
+        <parameter key="path">/home/fabien/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle</parameter>
         <parameter key="namespace">Symfony\Bundle\TwigBundle</parameter>
       </parameter>
       <parameter key="MonologBundle" type="collection">
         <parameter key="parent">null</parameter>
-        <parameter key="path">/var/www/html/symfony-stg/vendor/symfony/monolog-bundle</parameter>
+        <parameter key="path">/home/fabien/symfony-stg/vendor/symfony/monolog-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\MonologBundle</parameter>
       </parameter>
       <parameter key="SwiftmailerBundle" type="collection">
         <parameter key="parent">null</parameter>
-        <parameter key="path">/var/www/html/symfony-stg/vendor/symfony/swiftmailer-bundle</parameter>
+        <parameter key="path">/home/fabien/symfony-stg/vendor/symfony/swiftmailer-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\SwiftmailerBundle</parameter>
       </parameter>
       <parameter key="DoctrineBundle" type="collection">
         <parameter key="parent">null</parameter>
-        <parameter key="path">/var/www/html/symfony-stg/vendor/doctrine/doctrine-bundle</parameter>
+        <parameter key="path">/home/fabien/symfony-stg/vendor/doctrine/doctrine-bundle</parameter>
         <parameter key="namespace">Doctrine\Bundle\DoctrineBundle</parameter>
       </parameter>
       <parameter key="SensioFrameworkExtraBundle" type="collection">
         <parameter key="parent">null</parameter>
-        <parameter key="path">/var/www/html/symfony-stg/vendor/sensio/framework-extra-bundle</parameter>
+        <parameter key="path">/home/fabien/symfony-stg/vendor/sensio/framework-extra-bundle</parameter>
         <parameter key="namespace">Sensio\Bundle\FrameworkExtraBundle</parameter>
       </parameter>
       <parameter key="AppBundle" type="collection">
         <parameter key="parent">null</parameter>
-        <parameter key="path">/var/www/html/symfony-stg/src/AppBundle</parameter>
+        <parameter key="path">/home/fabien/symfony-stg/src/AppBundle</parameter>
         <parameter key="namespace">AppBundle</parameter>
       </parameter>
       <parameter key="FOSUserBundle" type="collection">
         <parameter key="parent">null</parameter>
-        <parameter key="path">/var/www/html/symfony-stg/vendor/friendsofsymfony/user-bundle</parameter>
+        <parameter key="path">/home/fabien/symfony-stg/vendor/friendsofsymfony/user-bundle</parameter>
         <parameter key="namespace">FOS\UserBundle</parameter>
       </parameter>
       <parameter key="AcmeHomeBundle" type="collection">
         <parameter key="parent">null</parameter>
-        <parameter key="path">/var/www/html/symfony-stg/src/Acme/AdminBundle</parameter>
+        <parameter key="path">/home/fabien/symfony-stg/src/Acme/AdminBundle</parameter>
         <parameter key="namespace">Acme\AdminBundle</parameter>
       </parameter>
       <parameter key="AcmeContactBundle" type="collection">
         <parameter key="parent">null</parameter>
-        <parameter key="path">/var/www/html/symfony-stg/src/Acme/ContactBundle</parameter>
+        <parameter key="path">/home/fabien/symfony-stg/src/Acme/ContactBundle</parameter>
         <parameter key="namespace">Acme\ContactBundle</parameter>
-      </parameter>
-      <parameter key="AcmeActeurBundle" type="collection">
-        <parameter key="parent">null</parameter>
-        <parameter key="path">/var/www/html/symfony-stg/src/Acme/ActeurBundle</parameter>
-        <parameter key="namespace">Acme\ActeurBundle</parameter>
       </parameter>
       <parameter key="AcmeFilialeBundle" type="collection">
         <parameter key="parent">null</parameter>
-        <parameter key="path">/var/www/html/symfony-stg/src/Acme/FilialeBundle</parameter>
+        <parameter key="path">/home/fabien/symfony-stg/src/Acme/FilialeBundle</parameter>
         <parameter key="namespace">Acme\FilialeBundle</parameter>
       </parameter>
       <parameter key="AcmeWorkBundle" type="collection">
         <parameter key="parent">null</parameter>
-        <parameter key="path">/var/www/html/symfony-stg/src/Acme/WorkBundle</parameter>
+        <parameter key="path">/home/fabien/symfony-stg/src/Acme/WorkBundle</parameter>
         <parameter key="namespace">Acme\WorkBundle</parameter>
       </parameter>
       <parameter key="DoctrineFixturesBundle" type="collection">
         <parameter key="parent">null</parameter>
-        <parameter key="path">/var/www/html/symfony-stg/vendor/doctrine/doctrine-fixtures-bundle</parameter>
+        <parameter key="path">/home/fabien/symfony-stg/vendor/doctrine/doctrine-fixtures-bundle</parameter>
         <parameter key="namespace">Doctrine\Bundle\FixturesBundle</parameter>
       </parameter>
       <parameter key="AcmeActuBundle" type="collection">
         <parameter key="parent">null</parameter>
-        <parameter key="path">/var/www/html/symfony-stg/src/Acme/ActuBundle</parameter>
+        <parameter key="path">/home/fabien/symfony-stg/src/Acme/ActuBundle</parameter>
         <parameter key="namespace">Acme\ActuBundle</parameter>
       </parameter>
       <parameter key="AsseticBundle" type="collection">
         <parameter key="parent">null</parameter>
-        <parameter key="path">/var/www/html/symfony-stg/vendor/symfony/assetic-bundle</parameter>
+        <parameter key="path">/home/fabien/symfony-stg/vendor/symfony/assetic-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\AsseticBundle</parameter>
       </parameter>
       <parameter key="KnpPaginatorBundle" type="collection">
         <parameter key="parent">null</parameter>
-        <parameter key="path">/var/www/html/symfony-stg/vendor/knplabs/knp-paginator-bundle</parameter>
+        <parameter key="path">/home/fabien/symfony-stg/vendor/knplabs/knp-paginator-bundle</parameter>
         <parameter key="namespace">Knp\Bundle\PaginatorBundle</parameter>
       </parameter>
       <parameter key="Curiosity26AngularMaterialBundle" type="collection">
         <parameter key="parent">null</parameter>
-        <parameter key="path">/var/www/html/symfony-stg/vendor/curiosity26/angular-material-bundle</parameter>
+        <parameter key="path">/home/fabien/symfony-stg/vendor/curiosity26/angular-material-bundle</parameter>
         <parameter key="namespace">Curiosity26\AngularMaterialBundle</parameter>
       </parameter>
       <parameter key="MaterializeBundle" type="collection">
         <parameter key="parent">null</parameter>
-        <parameter key="path">/var/www/html/symfony-stg/vendor/evheniy/materialize-bundle/Evheniy/MaterializeBundle</parameter>
+        <parameter key="path">/home/fabien/symfony-stg/vendor/evheniy/materialize-bundle/Evheniy/MaterializeBundle</parameter>
         <parameter key="namespace">Evheniy\MaterializeBundle</parameter>
       </parameter>
-      <parameter key="DoctrineMigrationsBundle" type="collection">
+      <parameter key="AcmeActeurBundle" type="collection">
         <parameter key="parent">null</parameter>
-        <parameter key="path">/var/www/html/symfony-stg/vendor/doctrine/doctrine-migrations-bundle</parameter>
-        <parameter key="namespace">Doctrine\Bundle\MigrationsBundle</parameter>
+        <parameter key="path">/home/fabien/symfony-stg/src/Acme/ActeurBundle</parameter>
+        <parameter key="namespace">Acme\ActeurBundle</parameter>
       </parameter>
       <parameter key="DebugBundle" type="collection">
         <parameter key="parent">null</parameter>
-        <parameter key="path">/var/www/html/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle</parameter>
+        <parameter key="path">/home/fabien/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle</parameter>
         <parameter key="namespace">Symfony\Bundle\DebugBundle</parameter>
       </parameter>
       <parameter key="WebProfilerBundle" type="collection">
         <parameter key="parent">null</parameter>
-        <parameter key="path">/var/www/html/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle</parameter>
+        <parameter key="path">/home/fabien/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle</parameter>
         <parameter key="namespace">Symfony\Bundle\WebProfilerBundle</parameter>
       </parameter>
       <parameter key="SensioDistributionBundle" type="collection">
         <parameter key="parent">null</parameter>
-        <parameter key="path">/var/www/html/symfony-stg/vendor/sensio/distribution-bundle</parameter>
+        <parameter key="path">/home/fabien/symfony-stg/vendor/sensio/distribution-bundle</parameter>
         <parameter key="namespace">Sensio\Bundle\DistributionBundle</parameter>
       </parameter>
       <parameter key="SensioGeneratorBundle" type="collection">
         <parameter key="parent">null</parameter>
-        <parameter key="path">/var/www/html/symfony-stg/vendor/sensio/generator-bundle</parameter>
+        <parameter key="path">/home/fabien/symfony-stg/vendor/sensio/generator-bundle</parameter>
         <parameter key="namespace">Sensio\Bundle\GeneratorBundle</parameter>
       </parameter>
       <parameter key="WebServerBundle" type="collection">
         <parameter key="parent">null</parameter>
-        <parameter key="path">/var/www/html/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/WebServerBundle</parameter>
+        <parameter key="path">/home/fabien/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/WebServerBundle</parameter>
         <parameter key="namespace">Symfony\Bundle\WebServerBundle</parameter>
       </parameter>
     </parameter>
@@ -176,14 +170,14 @@
     <parameter key="database_name">bdd</parameter>
     <parameter key="database_user">root</parameter>
     <parameter key="database_password">null</parameter>
-    <parameter key="database_path">/var/www/html/symfony-stg/app/bdd</parameter>
+    <parameter key="database_path">/home/fabien/symfony-stg/app/bdd</parameter>
     <parameter key="mailer_transport">smtp</parameter>
     <parameter key="mailer_host">127.0.0.1</parameter>
     <parameter key="mailer_user">fabienruault@gmail.com</parameter>
     <parameter key="mailer_password">vbmqvpcuxtzeadng</parameter>
     <parameter key="secret">7ced9d5c76ef7892fdb0d40e8c1fe23b36ad45bd</parameter>
     <parameter key="locale">Fr</parameter>
-    <parameter key="images_directory">/var/www/html/symfony-stg/app/../web/uploads/images</parameter>
+    <parameter key="images_directory">/home/fabien/symfony-stg/app/../web/uploads/images</parameter>
     <parameter key="fragment.renderer.hinclude.global_template">null</parameter>
     <parameter key="fragment.path">/_fragment</parameter>
     <parameter key="kernel.secret">7ced9d5c76ef7892fdb0d40e8c1fe23b36ad45bd</parameter>
@@ -198,7 +192,7 @@
       <parameter key="gc_probability">1</parameter>
       <parameter key="use_strict_mode">true</parameter>
     </parameter>
-    <parameter key="session.save_path">/var/www/html/symfony-stg/var/sessions/dev</parameter>
+    <parameter key="session.save_path">/home/fabien/symfony-stg/var/sessions/dev</parameter>
     <parameter key="session.metadata.update_threshold">0</parameter>
     <parameter key="form.type_extension.csrf.enabled">true</parameter>
     <parameter key="form.type_extension.csrf.field_name">_token</parameter>
@@ -209,13 +203,13 @@
       <parameter>twig</parameter>
     </parameter>
     <parameter key="validator.mapping.cache.prefix"></parameter>
-    <parameter key="validator.mapping.cache.file">/var/www/html/symfony-stg/var/cache/dev/validation.php</parameter>
+    <parameter key="validator.mapping.cache.file">/home/fabien/symfony-stg/var/cache/dev/validation.php</parameter>
     <parameter key="validator.translation_domain">validators</parameter>
     <parameter key="profiler_listener.only_exceptions">false</parameter>
     <parameter key="profiler_listener.only_master_requests">false</parameter>
-    <parameter key="profiler.storage.dsn">file:/var/www/html/symfony-stg/var/cache/dev/profiler</parameter>
+    <parameter key="profiler.storage.dsn">file:/home/fabien/symfony-stg/var/cache/dev/profiler</parameter>
     <parameter key="debug.error_handler.throw_at">-1</parameter>
-    <parameter key="debug.container.dump">/var/www/html/symfony-stg/var/cache/dev/appDevDebugProjectContainer.xml</parameter>
+    <parameter key="debug.container.dump">/home/fabien/symfony-stg/var/cache/dev/appDevDebugProjectContainer.xml</parameter>
     <parameter key="router.options.generator_class">Symfony\Component\Routing\Generator\UrlGenerator</parameter>
     <parameter key="router.options.generator_base_class">Symfony\Component\Routing\Generator\UrlGenerator</parameter>
     <parameter key="router.options.generator_dumper_class">Symfony\Component\Routing\Generator\Dumper\PhpGeneratorDumper</parameter>
@@ -227,7 +221,7 @@
     <parameter key="router.request_context.host">localhost</parameter>
     <parameter key="router.request_context.scheme">http</parameter>
     <parameter key="router.request_context.base_url"></parameter>
-    <parameter key="router.resource">/var/www/html/symfony-stg/var/cache/dev/assetic/routing.yml</parameter>
+    <parameter key="router.resource">/home/fabien/symfony-stg/var/cache/dev/assetic/routing.yml</parameter>
     <parameter key="router.cache_class_prefix">appDevDebugProjectContainer</parameter>
     <parameter key="request_listener.http_port">80</parameter>
     <parameter key="request_listener.https_port">443</parameter>
@@ -251,7 +245,7 @@
       <parameter>form_div_layout.html.twig</parameter>
       <parameter>@Curiosity26AngularMaterialBundle/Resources/Form/material_1_layout.html.twig</parameter>
     </parameter>
-    <parameter key="twig.default_path">/var/www/html/symfony-stg/templates</parameter>
+    <parameter key="twig.default_path">/home/fabien/symfony-stg/templates</parameter>
     <parameter key="monolog.use_microseconds">true</parameter>
     <parameter key="monolog.swift_mailer.handlers" type="collection"/>
     <parameter key="monolog.handlers_to_channels" type="collection">
@@ -295,7 +289,7 @@
     <parameter key="swiftmailer.mailer.default.transport.smtp.timeout">30</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.source_ip">null</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.local_domain">null</parameter>
-    <parameter key="swiftmailer.spool.default.memory.path">/var/www/html/symfony-stg/var/cache/dev/swiftmailer/spool/default</parameter>
+    <parameter key="swiftmailer.spool.default.memory.path">/home/fabien/symfony-stg/var/cache/dev/swiftmailer/spool/default</parameter>
     <parameter key="swiftmailer.mailer.default.spool.enabled">true</parameter>
     <parameter key="swiftmailer.mailer.default.plugin.impersonate">null</parameter>
     <parameter key="swiftmailer.mailer.default.single_address">null</parameter>
@@ -414,7 +408,7 @@
     <parameter key="doctrine.orm.second_level_cache.cache_configuration.class">Doctrine\ORM\Cache\CacheConfiguration</parameter>
     <parameter key="doctrine.orm.second_level_cache.regions_configuration.class">Doctrine\ORM\Cache\RegionsConfiguration</parameter>
     <parameter key="doctrine.orm.auto_generate_proxy_classes">true</parameter>
-    <parameter key="doctrine.orm.proxy_dir">/var/www/html/symfony-stg/var/cache/dev/doctrine/orm/Proxies</parameter>
+    <parameter key="doctrine.orm.proxy_dir">/home/fabien/symfony-stg/var/cache/dev/doctrine/orm/Proxies</parameter>
     <parameter key="doctrine.orm.proxy_namespace">Proxies</parameter>
     <parameter key="fos_user.backend_type_orm">true</parameter>
     <parameter key="fos_user.security.interactive_login_listener.class">FOS\UserBundle\EventListener\LastLoginListener</parameter>
@@ -472,7 +466,7 @@
     <parameter key="assetic.worker.cache_busting.class">Assetic\Factory\Worker\CacheBustingWorker</parameter>
     <parameter key="assetic.value_supplier.class">Symfony\Bundle\AsseticBundle\DefaultValueSupplier</parameter>
     <parameter key="assetic.node.paths" type="collection"/>
-    <parameter key="assetic.cache_dir">/var/www/html/symfony-stg/var/cache/dev/assetic</parameter>
+    <parameter key="assetic.cache_dir">/home/fabien/symfony-stg/var/cache/dev/assetic</parameter>
     <parameter key="assetic.bundles" type="collection">
       <parameter>MaterializeBundle</parameter>
     </parameter>
@@ -484,8 +478,8 @@
     <parameter key="assetic.debug">true</parameter>
     <parameter key="assetic.use_controller">true</parameter>
     <parameter key="assetic.enable_profiler">false</parameter>
-    <parameter key="assetic.read_from">/var/www/html/symfony-stg/app/../web</parameter>
-    <parameter key="assetic.write_to">/var/www/html/symfony-stg/app/../web</parameter>
+    <parameter key="assetic.read_from">/home/fabien/symfony-stg/app/../web</parameter>
+    <parameter key="assetic.write_to">/home/fabien/symfony-stg/app/../web</parameter>
     <parameter key="assetic.variables" type="collection"/>
     <parameter key="assetic.java.bin">/usr/bin/java</parameter>
     <parameter key="assetic.node.bin">/usr/bin/node</parameter>
@@ -518,12 +512,6 @@
     <parameter key="materialize.local_js">@MaterializeBundle/Resources/public/js/materialize.min.js</parameter>
     <parameter key="materialize.local_fonts_dir">@MaterializeBundle/Resources/public/fonts/</parameter>
     <parameter key="materialize.local_css">@MaterializeBundle/Resources/public/css/materialize.min.css</parameter>
-    <parameter key="doctrine_migrations.dir_name">/var/www/html/symfony-stg/app/DoctrineMigrations</parameter>
-    <parameter key="doctrine_migrations.namespace">App\DoctrineMigrations</parameter>
-    <parameter key="doctrine_migrations.table_name">migration_versions</parameter>
-    <parameter key="doctrine_migrations.name">App Migrations</parameter>
-    <parameter key="doctrine_migrations.custom_template">null</parameter>
-    <parameter key="doctrine_migrations.organize_migrations">false</parameter>
     <parameter key="web_profiler.debug_toolbar.position">bottom</parameter>
     <parameter key="web_profiler.debug_toolbar.intercept_redirects">false</parameter>
     <parameter key="web_profiler.debug_toolbar.mode">2</parameter>
@@ -642,13 +630,6 @@
       <parameter key="console.command.doctrine_bundle_doctrinebundle_command_proxy_updateschemadoctrinecommand">doctrine.schema_update_command</parameter>
       <parameter key="console.command.doctrine_bundle_doctrinebundle_command_proxy_validateschemacommand">doctrine.schema_validate_command</parameter>
       <parameter key="console.command.doctrine_bundle_fixturesbundle_command_loaddatafixturesdoctrinecommand">doctrine.fixtures_load_command</parameter>
-      <parameter key="console.command.doctrine_bundle_migrationsbundle_command_migrationsdiffdoctrinecommand">console.command.doctrine_bundle_migrationsbundle_command_migrationsdiffdoctrinecommand</parameter>
-      <parameter key="console.command.doctrine_bundle_migrationsbundle_command_migrationsexecutedoctrinecommand">console.command.doctrine_bundle_migrationsbundle_command_migrationsexecutedoctrinecommand</parameter>
-      <parameter key="console.command.doctrine_bundle_migrationsbundle_command_migrationsgeneratedoctrinecommand">console.command.doctrine_bundle_migrationsbundle_command_migrationsgeneratedoctrinecommand</parameter>
-      <parameter key="console.command.doctrine_bundle_migrationsbundle_command_migrationslatestdoctrinecommand">console.command.doctrine_bundle_migrationsbundle_command_migrationslatestdoctrinecommand</parameter>
-      <parameter key="console.command.doctrine_bundle_migrationsbundle_command_migrationsmigratedoctrinecommand">console.command.doctrine_bundle_migrationsbundle_command_migrationsmigratedoctrinecommand</parameter>
-      <parameter key="console.command.doctrine_bundle_migrationsbundle_command_migrationsstatusdoctrinecommand">console.command.doctrine_bundle_migrationsbundle_command_migrationsstatusdoctrinecommand</parameter>
-      <parameter key="console.command.doctrine_bundle_migrationsbundle_command_migrationsversiondoctrinecommand">console.command.doctrine_bundle_migrationsbundle_command_migrationsversiondoctrinecommand</parameter>
       <parameter key="console.command.sensiolabs_security_command_securitycheckercommand">console.command.sensiolabs_security_command_securitycheckercommand</parameter>
       <parameter key="console.command.symfony_bundle_webserverbundle_command_serverruncommand">web_server.command.server_run</parameter>
       <parameter key="console.command.symfony_bundle_webserverbundle_command_serverstartcommand">web_server.command.server_start</parameter>
@@ -711,7 +692,7 @@
       <tag name="controller.service_arguments"/>
     </service>
     <service id="actu.image_uploader" class="Acme\ActuBundle\ImageUpload" public="false" autowire="true" autoconfigure="true">
-      <argument>/var/www/html/symfony-stg/app/../web/uploads/images</argument>
+      <argument>/home/fabien/symfony-stg/app/../web/uploads/images</argument>
     </service>
     <service id="actu.doctrine_image_listener" class="Acme\ActuBundle\EventListener\UploadImageListener" public="false" autowire="true" autoconfigure="true">
       <tag name="doctrine.event_listener" event="prePersist"/>
@@ -797,9 +778,9 @@
     <service id="filesystem" class="Symfony\Component\Filesystem\Filesystem" public="true"/>
     <service id="file_locator" class="Symfony\Component\HttpKernel\Config\FileLocator">
       <argument type="service" id="kernel"/>
-      <argument>/var/www/html/symfony-stg/app/Resources</argument>
+      <argument>/home/fabien/symfony-stg/app/Resources</argument>
       <argument type="collection">
-        <argument>/var/www/html/symfony-stg/app</argument>
+        <argument>/home/fabien/symfony-stg/app</argument>
       </argument>
     </service>
     <service id="uri_signer" class="Symfony\Component\HttpKernel\UriSigner">
@@ -1018,8 +999,8 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>ZZ1B5kIGFOFNv8grpU387G</argument>
-      <argument>/var/www/html/symfony-stg/var/cache/dev/pools</argument>
+      <argument>jJOOn1sxeUeie0juQeA8Tv</argument>
+      <argument>/home/fabien/symfony-stg/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -1028,7 +1009,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>ZZ1B5kIGFOFNv8grpU387G</argument>
+      <argument>jJOOn1sxeUeie0juQeA8Tv</argument>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       </call>
@@ -1048,7 +1029,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>/var/www/html/symfony-stg/var/cache/dev/pools</argument>
+      <argument>/home/fabien/symfony-stg/var/cache/dev/pools</argument>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       </call>
@@ -1109,14 +1090,14 @@
       <argument type="service" id="translator.selector"/>
     </service>
     <service id="translator.selector" class="Symfony\Component\Translation\MessageSelector" public="false"/>
-    <service id="2_ServiceLocator~yo.ircd" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id="2_ServiceLocator~zh9cgbw" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="session" type="service" id="session" on-invalid="ignore"/>
       </argument>
     </service>
-    <service id="1_NativeFileSessionHandler~yo.ircd" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeFileSessionHandler" public="false">
-      <argument>/var/www/html/symfony-stg/var/sessions/dev</argument>
+    <service id="1_NativeFileSessionHandler~zh9cgbw" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeFileSessionHandler" public="false">
+      <argument>/home/fabien/symfony-stg/var/sessions/dev</argument>
     </service>
     <service id="session" class="Symfony\Component\HttpFoundation\Session\Session" public="true">
       <argument type="service" id="session.storage.native"/>
@@ -1139,12 +1120,12 @@
     <service id="session.flash_bag" class="Symfony\Component\HttpFoundation\Session\Flash\FlashBag" public="false"/>
     <service id="session.attribute_bag" class="Symfony\Component\HttpFoundation\Session\Attribute\AttributeBag" public="false"/>
     <service id="session.storage.mock_file" class="Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorage" public="false">
-      <argument>/var/www/html/symfony-stg/var/cache/dev/sessions</argument>
+      <argument>/home/fabien/symfony-stg/var/cache/dev/sessions</argument>
       <argument>MOCKSESSID</argument>
       <argument type="service" id="session.storage.metadata_bag"/>
     </service>
     <service id="session.handler.native_file" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\StrictSessionHandler" public="false">
-      <argument type="service" id="1_NativeFileSessionHandler~yo.ircd"/>
+      <argument type="service" id="1_NativeFileSessionHandler~zh9cgbw"/>
     </service>
     <service id="session.handler.write_check" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\WriteCheckSessionHandler" public="false">
       <deprecated>The "%service_id%" service is deprecated since Symfony 3.4 and will be removed in 4.0. Use the `session.lazy_write` ini setting instead.</deprecated>
@@ -1152,14 +1133,14 @@
     <service id="session_listener" class="Symfony\Component\HttpKernel\EventListener\SessionListener">
       <tag name="kernel.event_subscriber"/>
       <tag name="container.hot_path"/>
-      <argument type="service" id="2_ServiceLocator~yo.ircd"/>
+      <argument type="service" id="2_ServiceLocator~zh9cgbw"/>
     </service>
     <service id="session.save_listener" class="Symfony\Component\HttpKernel\EventListener\SaveSessionListener">
       <tag name="kernel.event_subscriber"/>
       <tag name="container.hot_path"/>
     </service>
     <service id="form.resolved_type_factory" class="Symfony\Component\Form\Extension\DataCollector\Proxy\ResolvedTypeFactoryDataCollectorProxy">
-      <argument type="service" id="1_ResolvedFormTypeFactory~efq1._1"/>
+      <argument type="service" id="1_ResolvedFormTypeFactory~ftpwgsl"/>
       <argument type="service" id="data_collector.form"/>
     </service>
     <service id="form.registry" class="Symfony\Component\Form\FormRegistry">
@@ -1398,12 +1379,12 @@
     <service id="templating.filename_parser" class="Symfony\Bundle\FrameworkBundle\Templating\TemplateFilenameParser"/>
     <service id="templating.locator" class="Symfony\Bundle\FrameworkBundle\Templating\Loader\TemplateLocator" public="false">
       <argument type="service" id="file_locator"/>
-      <argument>/var/www/html/symfony-stg/var/cache/dev</argument>
+      <argument>/home/fabien/symfony-stg/var/cache/dev</argument>
     </service>
     <service id="templating.finder" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\TemplateFinder" public="false">
       <argument type="service" id="kernel"/>
       <argument type="service" id="templating.filename_parser"/>
-      <argument>/var/www/html/symfony-stg/app/Resources</argument>
+      <argument>/home/fabien/symfony-stg/app/Resources</argument>
     </service>
     <service id="templating.cache_warmer.template_paths" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\TemplatePathsCacheWarmer" public="false">
       <tag name="kernel.cache_warmer" priority="20"/>
@@ -1427,13 +1408,13 @@
         <argument type="service" id="monolog.logger.templating" on-invalid="ignore"/>
       </call>
     </service>
-    <service id="2_ApcCache~t6jmd1x" class="Doctrine\Common\Cache\ApcCache" public="false">
+    <service id="2_ApcCache~hs8ntjq" class="Doctrine\Common\Cache\ApcCache" public="false">
       <call method="setNamespace">
         <argument></argument>
       </call>
     </service>
-    <service id="1_PhpArrayAdapter~t6jmd1x" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
-      <argument>/var/www/html/symfony-stg/var/cache/dev/validation.php</argument>
+    <service id="1_PhpArrayAdapter~hs8ntjq" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
+      <argument>/home/fabien/symfony-stg/var/cache/dev/validation.php</argument>
       <argument type="service" id="cache.validator"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -1449,8 +1430,8 @@
       </call>
       <call method="addXmlMappings">
         <argument type="collection">
-          <argument>/var/www/html/symfony-stg/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/config/validation.xml</argument>
-          <argument>/var/www/html/symfony-stg/vendor/friendsofsymfony/user-bundle/Resources/config/validation.xml</argument>
+          <argument>/home/fabien/symfony-stg/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/config/validation.xml</argument>
+          <argument>/home/fabien/symfony-stg/vendor/friendsofsymfony/user-bundle/Resources/config/validation.xml</argument>
         </argument>
       </call>
       <call method="enableAnnotationMapping">
@@ -1466,21 +1447,21 @@
         </argument>
       </call>
       <call method="addXmlMapping">
-        <argument>/var/www/html/symfony-stg/vendor/friendsofsymfony/user-bundle/DependencyInjection/Compiler/../../Resources/config/storage-validation/orm.xml</argument>
+        <argument>/home/fabien/symfony-stg/vendor/friendsofsymfony/user-bundle/DependencyInjection/Compiler/../../Resources/config/storage-validation/orm.xml</argument>
       </call>
       <factory class="Symfony\Component\Validator\Validation" method="createValidatorBuilder"/>
     </service>
     <service id="validator.mapping.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\ValidatorCacheWarmer" public="false">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="validator.builder"/>
-      <argument>/var/www/html/symfony-stg/var/cache/dev/validation.php</argument>
+      <argument>/home/fabien/symfony-stg/var/cache/dev/validation.php</argument>
       <argument type="service" id="cache.validator"/>
     </service>
     <service id="validator.mapping.cache.symfony" class="Symfony\Component\Validator\Mapping\Cache\Psr6Cache" public="false">
-      <argument type="service" id="1_PhpArrayAdapter~t6jmd1x"/>
+      <argument type="service" id="1_PhpArrayAdapter~hs8ntjq"/>
     </service>
     <service id="validator.mapping.cache.doctrine.apc" class="Symfony\Component\Validator\Mapping\Cache\DoctrineCache" public="false">
-      <argument type="service" id="2_ApcCache~t6jmd1x"/>
+      <argument type="service" id="2_ApcCache~hs8ntjq"/>
       <deprecated>The "%service_id%" service is deprecated since Symfony 3.4 and will be removed in 4.0. Use a Psr6 cache like "validator.mapping.cache.symfony" instead.</deprecated>
     </service>
     <service id="validator.validator_factory" class="Symfony\Component\Validator\ContainerConstraintValidatorFactory" public="false">
@@ -1558,7 +1539,7 @@
       </call>
     </service>
     <service id="profiler.storage" class="Symfony\Component\HttpKernel\Profiler\FileProfilerStorage" public="false">
-      <argument>file:/var/www/html/symfony-stg/var/cache/dev/profiler</argument>
+      <argument>file:/home/fabien/symfony-stg/var/cache/dev/profiler</argument>
     </service>
     <service id="profiler_listener" class="Symfony\Component\HttpKernel\EventListener\ProfilerListener">
       <tag name="kernel.event_subscriber"/>
@@ -1595,7 +1576,7 @@
       <tag name="data_collector" template="@WebProfiler/Collector/logger.html.twig" id="logger" priority="300"/>
       <tag name="monolog.logger" channel="profiler"/>
       <argument type="service" id="monolog.logger.profiler" on-invalid="ignore"/>
-      <argument>/var/www/html/symfony-stg/var/cache/dev/appDevDebugProjectContainer</argument>
+      <argument>/home/fabien/symfony-stg/var/cache/dev/appDevDebugProjectContainer</argument>
     </service>
     <service id="data_collector.time" class="Symfony\Component\HttpKernel\DataCollector\TimeDataCollector" public="false">
       <tag name="data_collector" template="@WebProfiler/Collector/time.html.twig" id="time" priority="330"/>
@@ -1633,7 +1614,7 @@
         <argument type="service" id="cache.annotations"/>
       </call>
     </service>
-    <service id="1_ResolvedFormTypeFactory~efq1._1" class="Symfony\Component\Form\ResolvedFormTypeFactory" public="false"/>
+    <service id="1_ResolvedFormTypeFactory~ftpwgsl" class="Symfony\Component\Form\ResolvedFormTypeFactory" public="false"/>
     <service id="form.type_extension.form.data_collector" class="Symfony\Component\Form\Extension\DataCollector\Type\DataCollectorTypeExtension" public="false">
       <tag name="form.type_extension" extended_type="Symfony\Component\Form\Extension\Core\Type\FormType" extended-type="Symfony\Component\Form\Extension\Core\Type\FormType"/>
       <argument type="service" id="data_collector.form"/>
@@ -1684,7 +1665,7 @@
     <service id="debug.file_link_formatter" class="Symfony\Component\HttpKernel\Debug\FileLinkFormatter" public="false">
       <argument>null</argument>
       <argument type="service" id="request_stack" on-invalid="ignore"/>
-      <argument>/var/www/html/symfony-stg</argument>
+      <argument>/home/fabien/symfony-stg</argument>
       <argument>/_profiler/open?file=%%f&amp;line=%%l#line%%l</argument>
     </service>
     <service id="debug.stopwatch" class="Symfony\Component\Stopwatch\Stopwatch">
@@ -2284,9 +2265,9 @@
     </service>
     <service id="router.default" class="Symfony\Bundle\FrameworkBundle\Routing\Router" public="false">
       <argument type="service" id="service_container"/>
-      <argument>/var/www/html/symfony-stg/var/cache/dev/assetic/routing.yml</argument>
+      <argument>/home/fabien/symfony-stg/var/cache/dev/assetic/routing.yml</argument>
       <argument type="collection">
-        <argument key="cache_dir">/var/www/html/symfony-stg/var/cache/dev</argument>
+        <argument key="cache_dir">/home/fabien/symfony-stg/var/cache/dev</argument>
         <argument key="debug">true</argument>
         <argument key="generator_class">Symfony\Component\Routing\Generator\UrlGenerator</argument>
         <argument key="generator_base_class">Symfony\Component\Routing\Generator\UrlGenerator</argument>
@@ -2327,7 +2308,7 @@
       <argument type="service" id="request_stack"/>
       <argument type="service" id="router.request_context" on-invalid="ignore"/>
       <argument type="service" id="monolog.logger.request" on-invalid="ignore"/>
-      <argument>/var/www/html/symfony-stg</argument>
+      <argument>/home/fabien/symfony-stg</argument>
       <argument>true</argument>
     </service>
     <service id="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" class="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" public="true">
@@ -2353,12 +2334,12 @@
       <argument type="service" id="file_locator"/>
       <argument type="service" id="routing.loader.annotation"/>
     </service>
-    <service id="2_PhpArrayAdapter~jrovflx" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
-      <argument>/var/www/html/symfony-stg/var/cache/dev/annotations.php</argument>
+    <service id="2_PhpArrayAdapter~izhm..e" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
+      <argument>/home/fabien/symfony-stg/var/cache/dev/annotations.php</argument>
       <argument type="service" id="cache.annotations"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
-    <service id="1_ArrayCache~jrovflx" class="Doctrine\Common\Cache\ArrayCache" public="false"/>
+    <service id="1_ArrayCache~izhm..e" class="Doctrine\Common\Cache\ArrayCache" public="false"/>
     <service id="annotations.reader" class="Doctrine\Common\Annotations\AnnotationReader" public="false">
       <call method="addGlobalIgnoredName">
         <argument>required</argument>
@@ -2376,19 +2357,19 @@
     <service id="annotations.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\AnnotationsCacheWarmer" public="false">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="annotations.reader"/>
-      <argument>/var/www/html/symfony-stg/var/cache/dev/annotations.php</argument>
+      <argument>/home/fabien/symfony-stg/var/cache/dev/annotations.php</argument>
       <argument type="service" id="cache.annotations"/>
       <argument>#^Symfony\\(?:Component\\HttpKernel\\|Bundle\\FrameworkBundle\\Controller\\(?!AbstractController$|Controller$))#</argument>
     </service>
     <service id="annotations.cache" class="Symfony\Component\Cache\DoctrineProvider" public="false">
-      <argument type="service" id="2_PhpArrayAdapter~jrovflx"/>
+      <argument type="service" id="2_PhpArrayAdapter~izhm..e"/>
     </service>
     <service id="property_accessor" class="Symfony\Component\PropertyAccess\PropertyAccessor">
       <argument>false</argument>
       <argument>false</argument>
       <argument type="service" id="cache.property_access" on-invalid="ignore"/>
     </service>
-    <service id="1_ServiceLocator~cvx3ae1" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id="1_ServiceLocator~xvf1kzy" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="security.authorization_checker" type="service" id="security.authorization_checker"/>
@@ -2405,7 +2386,7 @@
       <tag name="kernel.reset" method="setToken"/>
     </service>
     <service id="security.helper" class="Symfony\Component\Security\Core\Security" public="false">
-      <argument type="service" id="1_ServiceLocator~cvx3ae1"/>
+      <argument type="service" id="1_ServiceLocator~xvf1kzy"/>
     </service>
     <service id="security.user_value_resolver" class="Symfony\Bundle\SecurityBundle\SecurityUserValueResolver" public="false">
       <tag name="controller.argument_value_resolver" priority="40"/>
@@ -2991,12 +2972,12 @@
     </service>
     <service id="security.authentication.listener.anonymous.main" class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
       <argument type="service" id="security.token_storage"/>
-      <argument>5a4e3983090ee5.70418231</argument>
+      <argument>5a4f8882e9fda1.55813463</argument>
       <argument type="service" id="monolog.logger.security" on-invalid="null"/>
       <argument type="service" id="security.authentication.manager"/>
     </service>
     <service id="security.authentication.provider.anonymous.main" class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-      <argument>5a4e3983090ee5.70418231</argument>
+      <argument>5a4f8882e9fda1.55813463</argument>
     </service>
     <service id="security.exception_listener.main" class="Symfony\Component\Security\Http\Firewall\ExceptionListener" public="false">
       <argument type="service" id="security.token_storage"/>
@@ -3060,9 +3041,9 @@
         </argument>
         <argument key="exception_controller">twig.controller.exception:showAction</argument>
         <argument key="autoescape">name</argument>
-        <argument key="cache">/var/www/html/symfony-stg/var/cache/dev/twig</argument>
+        <argument key="cache">/home/fabien/symfony-stg/var/cache/dev/twig</argument>
         <argument key="charset">UTF-8</argument>
-        <argument key="default_path">/var/www/html/symfony-stg/templates</argument>
+        <argument key="default_path">/home/fabien/symfony-stg/templates</argument>
         <argument key="paths" type="collection"/>
         <argument key="date" type="collection">
           <argument key="format">F j, Y H:i</argument>
@@ -3168,14 +3149,14 @@
       <argument type="service" id="service_locator.c7_qahl.twig.cache_warmer"/>
       <argument type="service" id="templating.finder" on-invalid="ignore"/>
       <argument type="collection">
-        <argument key="/var/www/html/symfony-stg/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form">null</argument>
+        <argument key="/home/fabien/symfony-stg/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form">null</argument>
       </argument>
     </service>
     <service id="twig.template_iterator" class="Symfony\Bundle\TwigBundle\TemplateIterator" public="false">
       <argument type="service" id="kernel"/>
-      <argument>/var/www/html/symfony-stg/app</argument>
+      <argument>/home/fabien/symfony-stg/app</argument>
       <argument type="collection">
-        <argument key="/var/www/html/symfony-stg/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form">null</argument>
+        <argument key="/home/fabien/symfony-stg/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form">null</argument>
       </argument>
     </service>
     <service id="twig.template_cache_warmer" class="Symfony\Bundle\TwigBundle\CacheWarmer\TemplateCacheWarmer" public="false">
@@ -3187,136 +3168,136 @@
     </service>
     <service id="twig.loader.native_filesystem" class="Twig\Loader\FilesystemLoader" public="false">
       <argument type="collection"/>
-      <argument>/var/www/html/symfony-stg</argument>
+      <argument>/home/fabien/symfony-stg</argument>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views</argument>
         <argument>Framework</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views</argument>
         <argument>!Framework</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/views</argument>
         <argument>Security</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/views</argument>
         <argument>!Security</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views</argument>
         <argument>Twig</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views</argument>
         <argument>!Twig</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/symfony/swiftmailer-bundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/symfony/swiftmailer-bundle/Resources/views</argument>
         <argument>Swiftmailer</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/symfony/swiftmailer-bundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/symfony/swiftmailer-bundle/Resources/views</argument>
         <argument>!Swiftmailer</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/doctrine/doctrine-bundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/doctrine/doctrine-bundle/Resources/views</argument>
         <argument>Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/doctrine/doctrine-bundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/doctrine/doctrine-bundle/Resources/views</argument>
         <argument>!Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/app/Resources/FOSUserBundle/views</argument>
+        <argument>/home/fabien/symfony-stg/app/Resources/FOSUserBundle/views</argument>
         <argument>FOSUser</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/friendsofsymfony/user-bundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/friendsofsymfony/user-bundle/Resources/views</argument>
         <argument>FOSUser</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/friendsofsymfony/user-bundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/friendsofsymfony/user-bundle/Resources/views</argument>
         <argument>!FOSUser</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/src/Acme/AdminBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/src/Acme/AdminBundle/Resources/views</argument>
         <argument>AcmeHome</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/src/Acme/AdminBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/src/Acme/AdminBundle/Resources/views</argument>
         <argument>!AcmeHome</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/src/Acme/ActeurBundle/Resources/views</argument>
-        <argument>AcmeActeur</argument>
-      </call>
-      <call method="addPath">
-        <argument>/var/www/html/symfony-stg/src/Acme/ActeurBundle/Resources/views</argument>
-        <argument>!AcmeActeur</argument>
-      </call>
-      <call method="addPath">
-        <argument>/var/www/html/symfony-stg/src/Acme/FilialeBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/src/Acme/FilialeBundle/Resources/views</argument>
         <argument>AcmeFiliale</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/src/Acme/FilialeBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/src/Acme/FilialeBundle/Resources/views</argument>
         <argument>!AcmeFiliale</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/src/Acme/WorkBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/src/Acme/WorkBundle/Resources/views</argument>
         <argument>AcmeWork</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/src/Acme/WorkBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/src/Acme/WorkBundle/Resources/views</argument>
         <argument>!AcmeWork</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/src/Acme/ActuBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/src/Acme/ActuBundle/Resources/views</argument>
         <argument>AcmeActu</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/src/Acme/ActuBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/src/Acme/ActuBundle/Resources/views</argument>
         <argument>!AcmeActu</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/knplabs/knp-paginator-bundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/knplabs/knp-paginator-bundle/Resources/views</argument>
         <argument>KnpPaginator</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/knplabs/knp-paginator-bundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/knplabs/knp-paginator-bundle/Resources/views</argument>
         <argument>!KnpPaginator</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/evheniy/materialize-bundle/Evheniy/MaterializeBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/evheniy/materialize-bundle/Evheniy/MaterializeBundle/Resources/views</argument>
         <argument>Materialize</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/evheniy/materialize-bundle/Evheniy/MaterializeBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/evheniy/materialize-bundle/Evheniy/MaterializeBundle/Resources/views</argument>
         <argument>!Materialize</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/src/Acme/ActeurBundle/Resources/views</argument>
+        <argument>AcmeActeur</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/fabien/symfony-stg/src/Acme/ActeurBundle/Resources/views</argument>
+        <argument>!AcmeActeur</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/fabien/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views</argument>
         <argument>Debug</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views</argument>
         <argument>!Debug</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views</argument>
         <argument>WebProfiler</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views</argument>
         <argument>!WebProfiler</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/app/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/app/Resources/views</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form</argument>
+        <argument>/home/fabien/symfony-stg/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form</argument>
       </call>
     </service>
     <service id="twig.loader.chain" class="Twig\Loader\ChainLoader" public="false"/>
@@ -3342,7 +3323,7 @@
     <service id="twig.extension.code" class="Symfony\Bridge\Twig\Extension\CodeExtension" public="false">
       <tag name="twig.extension"/>
       <argument type="service" id="debug.file_link_formatter" on-invalid="ignore"/>
-      <argument>/var/www/html/symfony-stg/app</argument>
+      <argument>/home/fabien/symfony-stg/app</argument>
       <argument>UTF-8</argument>
     </service>
     <service id="twig.extension.routing" class="Symfony\Bridge\Twig\Extension\RoutingExtension" public="false">
@@ -3424,136 +3405,136 @@
       <tag name="twig.loader"/>
       <argument type="service" id="templating.locator"/>
       <argument type="service" id="templating.name_parser"/>
-      <argument>/var/www/html/symfony-stg</argument>
+      <argument>/home/fabien/symfony-stg</argument>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views</argument>
         <argument>Framework</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views</argument>
         <argument>!Framework</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/views</argument>
         <argument>Security</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/views</argument>
         <argument>!Security</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views</argument>
         <argument>Twig</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views</argument>
         <argument>!Twig</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/symfony/swiftmailer-bundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/symfony/swiftmailer-bundle/Resources/views</argument>
         <argument>Swiftmailer</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/symfony/swiftmailer-bundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/symfony/swiftmailer-bundle/Resources/views</argument>
         <argument>!Swiftmailer</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/doctrine/doctrine-bundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/doctrine/doctrine-bundle/Resources/views</argument>
         <argument>Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/doctrine/doctrine-bundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/doctrine/doctrine-bundle/Resources/views</argument>
         <argument>!Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/app/Resources/FOSUserBundle/views</argument>
+        <argument>/home/fabien/symfony-stg/app/Resources/FOSUserBundle/views</argument>
         <argument>FOSUser</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/friendsofsymfony/user-bundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/friendsofsymfony/user-bundle/Resources/views</argument>
         <argument>FOSUser</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/friendsofsymfony/user-bundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/friendsofsymfony/user-bundle/Resources/views</argument>
         <argument>!FOSUser</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/src/Acme/AdminBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/src/Acme/AdminBundle/Resources/views</argument>
         <argument>AcmeHome</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/src/Acme/AdminBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/src/Acme/AdminBundle/Resources/views</argument>
         <argument>!AcmeHome</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/src/Acme/ActeurBundle/Resources/views</argument>
-        <argument>AcmeActeur</argument>
-      </call>
-      <call method="addPath">
-        <argument>/var/www/html/symfony-stg/src/Acme/ActeurBundle/Resources/views</argument>
-        <argument>!AcmeActeur</argument>
-      </call>
-      <call method="addPath">
-        <argument>/var/www/html/symfony-stg/src/Acme/FilialeBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/src/Acme/FilialeBundle/Resources/views</argument>
         <argument>AcmeFiliale</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/src/Acme/FilialeBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/src/Acme/FilialeBundle/Resources/views</argument>
         <argument>!AcmeFiliale</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/src/Acme/WorkBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/src/Acme/WorkBundle/Resources/views</argument>
         <argument>AcmeWork</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/src/Acme/WorkBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/src/Acme/WorkBundle/Resources/views</argument>
         <argument>!AcmeWork</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/src/Acme/ActuBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/src/Acme/ActuBundle/Resources/views</argument>
         <argument>AcmeActu</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/src/Acme/ActuBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/src/Acme/ActuBundle/Resources/views</argument>
         <argument>!AcmeActu</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/knplabs/knp-paginator-bundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/knplabs/knp-paginator-bundle/Resources/views</argument>
         <argument>KnpPaginator</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/knplabs/knp-paginator-bundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/knplabs/knp-paginator-bundle/Resources/views</argument>
         <argument>!KnpPaginator</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/evheniy/materialize-bundle/Evheniy/MaterializeBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/evheniy/materialize-bundle/Evheniy/MaterializeBundle/Resources/views</argument>
         <argument>Materialize</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/evheniy/materialize-bundle/Evheniy/MaterializeBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/evheniy/materialize-bundle/Evheniy/MaterializeBundle/Resources/views</argument>
         <argument>!Materialize</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/src/Acme/ActeurBundle/Resources/views</argument>
+        <argument>AcmeActeur</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/fabien/symfony-stg/src/Acme/ActeurBundle/Resources/views</argument>
+        <argument>!AcmeActeur</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/fabien/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views</argument>
         <argument>Debug</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views</argument>
         <argument>!Debug</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views</argument>
         <argument>WebProfiler</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views</argument>
         <argument>!WebProfiler</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/app/Resources/views</argument>
+        <argument>/home/fabien/symfony-stg/app/Resources/views</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/symfony-stg/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form</argument>
+        <argument>/home/fabien/symfony-stg/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form</argument>
       </call>
     </service>
     <service id="templating.engine.twig" class="Symfony\Bundle\TwigBundle\TwigEngine" public="false">
@@ -3564,7 +3545,7 @@
     <service id="twig.command.debug" class="Symfony\Bridge\Twig\Command\DebugCommand" public="false">
       <tag name="console.command" command="debug:twig"/>
       <argument type="service" id="twig"/>
-      <argument>/var/www/html/symfony-stg</argument>
+      <argument>/home/fabien/symfony-stg</argument>
       <call method="setName">
         <argument>debug:twig</argument>
       </call>
@@ -3620,7 +3601,7 @@
     </service>
     <service id="monolog.processor.psr_log_message" class="Monolog\Processor\PsrLogMessageProcessor" public="false"/>
     <service id="monolog.handler.main" class="Monolog\Handler\StreamHandler">
-      <argument>/var/www/html/symfony-stg/var/logs/dev.log</argument>
+      <argument>/home/fabien/symfony-stg/var/logs/dev.log</argument>
       <argument>100</argument>
       <argument>true</argument>
       <argument>null</argument>
@@ -3639,9 +3620,9 @@
       <argument>100</argument>
       <argument>true</argument>
     </service>
-    <service id="3_Swift_Transport_Esmtp_Auth_PlainAuthenticator~lmh.gzj" class="Swift_Transport_Esmtp_Auth_PlainAuthenticator" public="false"/>
-    <service id="2_Swift_Transport_Esmtp_Auth_LoginAuthenticator~lmh.gzj" class="Swift_Transport_Esmtp_Auth_LoginAuthenticator" public="false"/>
-    <service id="1_Swift_Transport_Esmtp_Auth_CramMd5Authenticator~lmh.gzj" class="Swift_Transport_Esmtp_Auth_CramMd5Authenticator" public="false"/>
+    <service id="3_Swift_Transport_Esmtp_Auth_PlainAuthenticator~dmzl_ma" class="Swift_Transport_Esmtp_Auth_PlainAuthenticator" public="false"/>
+    <service id="2_Swift_Transport_Esmtp_Auth_LoginAuthenticator~dmzl_ma" class="Swift_Transport_Esmtp_Auth_LoginAuthenticator" public="false"/>
+    <service id="1_Swift_Transport_Esmtp_Auth_CramMd5Authenticator~dmzl_ma" class="Swift_Transport_Esmtp_Auth_CramMd5Authenticator" public="false"/>
     <service id="swiftmailer.mailer.abstract" class="Swift_Mailer" public="true" abstract="true">
       <argument type="service" id="swiftmailer.mailer.default.transport.spool"/>
     </service>
@@ -3658,9 +3639,9 @@
     </service>
     <service id="swiftmailer.transport.authhandler.abstract" class="Swift_Transport_Esmtp_AuthHandler" public="false" abstract="true">
       <argument type="collection">
-        <argument type="service" id="1_Swift_Transport_Esmtp_Auth_CramMd5Authenticator~lmh.gzj"/>
-        <argument type="service" id="2_Swift_Transport_Esmtp_Auth_LoginAuthenticator~lmh.gzj"/>
-        <argument type="service" id="3_Swift_Transport_Esmtp_Auth_PlainAuthenticator~lmh.gzj"/>
+        <argument type="service" id="1_Swift_Transport_Esmtp_Auth_CramMd5Authenticator~dmzl_ma"/>
+        <argument type="service" id="2_Swift_Transport_Esmtp_Auth_LoginAuthenticator~dmzl_ma"/>
+        <argument type="service" id="3_Swift_Transport_Esmtp_Auth_PlainAuthenticator~dmzl_ma"/>
       </argument>
     </service>
     <service id="swiftmailer.transport.eventdispatcher.abstract" class="Swift_Events_SimpleEventDispatcher" public="false" abstract="true"/>
@@ -3672,7 +3653,7 @@
     <service id="swiftmailer.transport.smtp.abstract" class="Swift_Transport_EsmtpTransport" public="false" abstract="true"/>
     <service id="swiftmailer.transport.spool.abstract" class="Swift_Transport_SpoolTransport" public="false" abstract="true"/>
     <service id="swiftmailer.spool.file.abstract" class="Swift_FileSpool" public="false" abstract="true">
-      <argument>/var/www/html/symfony-stg/app/../data/swiftmailer/spool</argument>
+      <argument>/home/fabien/symfony-stg/app/../data/swiftmailer/spool</argument>
     </service>
     <service id="swiftmailer.spool.memory.abstract" class="Swift_MemorySpool" public="false" abstract="true"/>
     <service id="swiftmailer.email_sender.listener" class="Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener">
@@ -3687,9 +3668,9 @@
     <service id="swiftmailer.mailer.default.transport.eventdispatcher" class="Swift_Events_SimpleEventDispatcher" public="false"/>
     <service id="swiftmailer.mailer.default.transport.authhandler" class="Swift_Transport_Esmtp_AuthHandler" public="false">
       <argument type="collection">
-        <argument type="service" id="1_Swift_Transport_Esmtp_Auth_CramMd5Authenticator~lmh.gzj"/>
-        <argument type="service" id="2_Swift_Transport_Esmtp_Auth_LoginAuthenticator~lmh.gzj"/>
-        <argument type="service" id="3_Swift_Transport_Esmtp_Auth_PlainAuthenticator~lmh.gzj"/>
+        <argument type="service" id="1_Swift_Transport_Esmtp_Auth_CramMd5Authenticator~dmzl_ma"/>
+        <argument type="service" id="2_Swift_Transport_Esmtp_Auth_LoginAuthenticator~dmzl_ma"/>
+        <argument type="service" id="3_Swift_Transport_Esmtp_Auth_PlainAuthenticator~dmzl_ma"/>
       </argument>
       <call method="setUsername">
         <argument>fabienruault@gmail.com</argument>
@@ -3878,7 +3859,7 @@
         <argument key="user">root</argument>
         <argument key="password">null</argument>
         <argument key="charset">UTF8</argument>
-        <argument key="path">/var/www/html/symfony-stg/app/bdd</argument>
+        <argument key="path">/home/fabien/symfony-stg/app/bdd</argument>
         <argument key="host">localhost</argument>
         <argument key="port">null</argument>
         <argument key="driverOptions" type="collection"/>
@@ -4029,8 +4010,9 @@
       <call method="setEntityNamespaces">
         <argument type="collection">
           <argument key="AppBundle">AppBundle\Entity</argument>
-          <argument key="AcmeActeurBundle">Acme\ActeurBundle\Entity</argument>
+          <argument key="AcmeContactBundle">Acme\ContactBundle\Entity</argument>
           <argument key="AcmeActuBundle">Acme\ActuBundle\Entity</argument>
+          <argument key="AcmeActeurBundle">Acme\ActeurBundle\Entity</argument>
         </argument>
       </call>
       <call method="setMetadataCacheImpl">
@@ -4046,7 +4028,7 @@
         <argument type="service" id="doctrine.orm.default_metadata_driver"/>
       </call>
       <call method="setProxyDir">
-        <argument>/var/www/html/symfony-stg/var/cache/dev/doctrine/orm/Proxies</argument>
+        <argument>/home/fabien/symfony-stg/var/cache/dev/doctrine/orm/Proxies</argument>
       </call>
       <call method="setProxyNamespace">
         <argument>Proxies</argument>
@@ -4076,13 +4058,21 @@
     <service id="doctrine.orm.default_annotation_metadata_driver" class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
       <argument type="service" id="annotations.cached_reader"/>
       <argument type="collection">
-        <argument>/var/www/html/symfony-stg/src/AppBundle/Entity</argument>
+        <argument>/home/fabien/symfony-stg/src/AppBundle/Entity</argument>
+        <argument>/home/fabien/symfony-stg/src/Acme/ContactBundle/Entity</argument>
       </argument>
     </service>
     <service id="doctrine.orm.default_yml_metadata_driver" class="Doctrine\ORM\Mapping\Driver\SimplifiedYamlDriver" public="false">
       <argument type="collection">
-        <argument key="/var/www/html/symfony-stg/src/Acme/ActeurBundle/Resources/config/doctrine">Acme\ActeurBundle\Entity</argument>
-        <argument key="/var/www/html/symfony-stg/src/Acme/ActuBundle/Resources/config/doctrine">Acme\ActuBundle\Entity</argument>
+        <argument key="/home/fabien/symfony-stg/src/Acme/ActuBundle/Resources/config/doctrine">Acme\ActuBundle\Entity</argument>
+      </argument>
+      <call method="setGlobalBasename">
+        <argument>mapping</argument>
+      </call>
+    </service>
+    <service id="doctrine.orm.default_xml_metadata_driver" class="Doctrine\ORM\Mapping\Driver\SimplifiedXmlDriver" public="false">
+      <argument type="collection">
+        <argument key="/home/fabien/symfony-stg/src/Acme/ActeurBundle/Resources/config/doctrine">Acme\ActeurBundle\Entity</argument>
       </argument>
       <call method="setGlobalBasename">
         <argument>mapping</argument>
@@ -4094,12 +4084,16 @@
         <argument>AppBundle\Entity</argument>
       </call>
       <call method="addDriver">
-        <argument type="service" id="doctrine.orm.default_yml_metadata_driver"/>
-        <argument>Acme\ActeurBundle\Entity</argument>
+        <argument type="service" id="doctrine.orm.default_annotation_metadata_driver"/>
+        <argument>Acme\ContactBundle\Entity</argument>
       </call>
       <call method="addDriver">
         <argument type="service" id="doctrine.orm.default_yml_metadata_driver"/>
         <argument>Acme\ActuBundle\Entity</argument>
+      </call>
+      <call method="addDriver">
+        <argument type="service" id="doctrine.orm.default_xml_metadata_driver"/>
+        <argument>Acme\ActeurBundle\Entity</argument>
       </call>
       <call method="addDriver">
         <argument type="service">
@@ -4107,7 +4101,7 @@
             <argument type="service">
               <service class="Doctrine\Common\Persistence\Mapping\Driver\SymfonyFileLocator">
                 <argument type="collection">
-                  <argument key="/var/www/html/symfony-stg/vendor/friendsofsymfony/user-bundle/Resources/config/doctrine-mapping">FOS\UserBundle\Model</argument>
+                  <argument key="/home/fabien/symfony-stg/vendor/friendsofsymfony/user-bundle/Resources/config/doctrine-mapping">FOS\UserBundle\Model</argument>
                 </argument>
                 <argument>.orm.xml</argument>
               </service>
@@ -4119,17 +4113,17 @@
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_metadata_cache" class="Doctrine\Common\Cache\ArrayCache">
       <call method="setNamespace">
-        <argument>sf_orm_default_6ffc63c07990b1827da96d92507fc8ec50d0ddb3b958d45eca0349a3e867bd8e</argument>
+        <argument>sf_orm_default_6b140d13f40972220b636205194a1c1d2c283ba268c3a195d211f875b14590e9</argument>
       </call>
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_result_cache" class="Doctrine\Common\Cache\ArrayCache">
       <call method="setNamespace">
-        <argument>sf_orm_default_6ffc63c07990b1827da96d92507fc8ec50d0ddb3b958d45eca0349a3e867bd8e</argument>
+        <argument>sf_orm_default_6b140d13f40972220b636205194a1c1d2c283ba268c3a195d211f875b14590e9</argument>
       </call>
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_query_cache" class="Doctrine\Common\Cache\ArrayCache">
       <call method="setNamespace">
-        <argument>sf_orm_default_6ffc63c07990b1827da96d92507fc8ec50d0ddb3b958d45eca0349a3e867bd8e</argument>
+        <argument>sf_orm_default_6b140d13f40972220b636205194a1c1d2c283ba268c3a195d211f875b14590e9</argument>
       </call>
     </service>
     <service id="doctrine.orm.default_entity_listener_resolver" class="Doctrine\Bundle\DoctrineBundle\Mapping\ContainerAwareEntityListenerResolver">
@@ -4418,7 +4412,7 @@
       <argument type="service" id="kernel"/>
       <argument type="service" id="service_container"/>
       <argument type="service" id="assetic.parameter_bag"/>
-      <argument>/var/www/html/symfony-stg/app/../web</argument>
+      <argument>/home/fabien/symfony-stg/app/../web</argument>
       <argument>true</argument>
       <call method="addWorker">
         <argument type="service" id="assetic.use_controller_worker"/>
@@ -4432,7 +4426,7 @@
       <argument type="collection">
         <argument key="jquery" type="collection">
           <argument type="collection">
-            <argument>/var/www/html/symfony-stg/app/../vendor/components/jquery/jquery.min.js</argument>
+            <argument>/home/fabien/symfony-stg/app/../vendor/components/jquery/jquery.min.js</argument>
           </argument>
           <argument type="collection"/>
           <argument type="collection"/>
@@ -4447,7 +4441,7 @@
       </argument>
     </service>
     <service id="assetic.config_cache" class="Assetic\Cache\ConfigCache" public="false">
-      <argument>/var/www/html/symfony-stg/var/cache/dev/assetic/config</argument>
+      <argument>/home/fabien/symfony-stg/var/cache/dev/assetic/config</argument>
     </service>
     <service id="assetic.asset_manager_cache_warmer" class="Symfony\Bundle\AsseticBundle\CacheWarmer\AssetManagerCacheWarmer" public="false">
       <tag name="kernel.cache_warmer" priority="10"/>
@@ -4499,7 +4493,7 @@
       <argument type="service" id="profiler" on-invalid="null"/>
     </service>
     <service id="assetic.cache" class="Assetic\Cache\FilesystemCache" public="false">
-      <argument>/var/www/html/symfony-stg/var/cache/dev/assetic/assets</argument>
+      <argument>/home/fabien/symfony-stg/var/cache/dev/assetic/assets</argument>
     </service>
     <service id="assetic.use_controller_worker" class="Symfony\Bundle\AsseticBundle\Factory\Worker\UseControllerWorker" public="false">
       <tag name="assetic.factory_worker"/>
@@ -4553,27 +4547,6 @@
       <tag name="twig.extension"/>
       <argument type="service" id="service_container"/>
     </service>
-    <service id="doctrine_migrations.diff_command" class="Doctrine\Bundle\MigrationsBundle\Command\MigrationsDiffDoctrineCommand">
-      <tag name="console.command"/>
-    </service>
-    <service id="doctrine_migrations.execute_command" class="Doctrine\Bundle\MigrationsBundle\Command\MigrationsExecuteDoctrineCommand">
-      <tag name="console.command"/>
-    </service>
-    <service id="doctrine_migrations.generate_command" class="Doctrine\Bundle\MigrationsBundle\Command\MigrationsGenerateDoctrineCommand">
-      <tag name="console.command"/>
-    </service>
-    <service id="doctrine_migrations.latest_command" class="Doctrine\Bundle\MigrationsBundle\Command\MigrationsLatestDoctrineCommand">
-      <tag name="console.command"/>
-    </service>
-    <service id="doctrine_migrations.migrate_command" class="Doctrine\Bundle\MigrationsBundle\Command\MigrationsMigrateDoctrineCommand">
-      <tag name="console.command"/>
-    </service>
-    <service id="doctrine_migrations.status_command" class="Doctrine\Bundle\MigrationsBundle\Command\MigrationsStatusDoctrineCommand">
-      <tag name="console.command"/>
-    </service>
-    <service id="doctrine_migrations.version_command" class="Doctrine\Bundle\MigrationsBundle\Command\MigrationsVersionDoctrineCommand">
-      <tag name="console.command"/>
-    </service>
     <service id="twig.extension.dump" class="Symfony\Bridge\Twig\Extension\DumpExtension" public="false">
       <tag name="twig.extension"/>
       <argument type="service" id="var_dumper.cloner"/>
@@ -4618,7 +4591,7 @@
         </argument>
       </call>
     </service>
-    <service id="2_HtmlDumper~dzvzol1" class="Symfony\Component\VarDumper\Dumper\HtmlDumper" public="false">
+    <service id="2_HtmlDumper~ct3dyeg" class="Symfony\Component\VarDumper\Dumper\HtmlDumper" public="false">
       <argument>null</argument>
       <argument>UTF-8</argument>
       <argument>1</argument>
@@ -4629,7 +4602,7 @@
         </argument>
       </call>
     </service>
-    <service id="1_NonceGenerator~dzvzol1" class="Symfony\Bundle\WebProfilerBundle\Csp\NonceGenerator" public="false"/>
+    <service id="1_NonceGenerator~ct3dyeg" class="Symfony\Bundle\WebProfilerBundle\Csp\NonceGenerator" public="false"/>
     <service id="web_profiler.controller.profiler" class="Symfony\Bundle\WebProfilerBundle\Controller\ProfilerController" public="true">
       <argument type="service" id="router.default" on-invalid="null"/>
       <argument type="service" id="profiler" on-invalid="null"/>
@@ -4637,7 +4610,7 @@
       <argument>%data_collector.templates%</argument>
       <argument>bottom</argument>
       <argument type="service" id="web_profiler.csp.handler"/>
-      <argument>/var/www/html/symfony-stg</argument>
+      <argument>/home/fabien/symfony-stg</argument>
     </service>
     <service id="web_profiler.controller.router" class="Symfony\Bundle\WebProfilerBundle\Controller\RouterController" public="true">
       <argument type="service" id="profiler" on-invalid="null"/>
@@ -4650,11 +4623,11 @@
       <argument>true</argument>
     </service>
     <service id="web_profiler.csp.handler" class="Symfony\Bundle\WebProfilerBundle\Csp\ContentSecurityPolicyHandler" public="false">
-      <argument type="service" id="1_NonceGenerator~dzvzol1"/>
+      <argument type="service" id="1_NonceGenerator~ct3dyeg"/>
     </service>
     <service id="twig.extension.webprofiler" class="Symfony\Bundle\WebProfilerBundle\Twig\WebProfilerExtension" public="false">
       <tag name="twig.extension"/>
-      <argument type="service" id="2_HtmlDumper~dzvzol1"/>
+      <argument type="service" id="2_HtmlDumper~ct3dyeg"/>
     </service>
     <service id="web_profiler.debug_toolbar" class="Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener">
       <tag name="kernel.event_subscriber"/>
@@ -4674,7 +4647,7 @@
     </service>
     <service id="web_server.command.server_run" class="Symfony\Bundle\WebServerBundle\Command\ServerRunCommand" public="false">
       <tag name="console.command" command="server:run"/>
-      <argument>/var/www/html/symfony-stg/public</argument>
+      <argument>/home/fabien/symfony-stg/public</argument>
       <argument>dev</argument>
       <call method="setName">
         <argument>server:run</argument>
@@ -4682,7 +4655,7 @@
     </service>
     <service id="web_server.command.server_start" class="Symfony\Bundle\WebServerBundle\Command\ServerStartCommand" public="false">
       <tag name="console.command" command="server:start"/>
-      <argument>/var/www/html/symfony-stg/public</argument>
+      <argument>/home/fabien/symfony-stg/public</argument>
       <argument>dev</argument>
       <call method="setName">
         <argument>server:start</argument>
@@ -4987,7 +4960,7 @@
           <service class="Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource" public="false">
             <argument type="service" id="templating.loader.filesystem"/>
             <argument>MaterializeBundle</argument>
-            <argument>/var/www/html/symfony-stg/app/Resources/MaterializeBundle/views</argument>
+            <argument>/home/fabien/symfony-stg/app/Resources/MaterializeBundle/views</argument>
             <argument>/\.[^.]+\.twig$/</argument>
           </service>
         </argument>
@@ -4995,7 +4968,7 @@
           <service class="Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource" public="false">
             <argument type="service" id="templating.loader.filesystem"/>
             <argument>MaterializeBundle</argument>
-            <argument>/var/www/html/symfony-stg/vendor/evheniy/materialize-bundle/Evheniy/MaterializeBundle/Resources/views</argument>
+            <argument>/home/fabien/symfony-stg/vendor/evheniy/materialize-bundle/Evheniy/MaterializeBundle/Resources/views</argument>
             <argument>/\.[^.]+\.twig$/</argument>
           </service>
         </argument>
@@ -5006,7 +4979,7 @@
       <tag name="assetic.formula_resource" loader="twig"/>
       <argument type="service" id="templating.loader.filesystem"/>
       <argument></argument>
-      <argument>/var/www/html/symfony-stg/app/Resources/views</argument>
+      <argument>/home/fabien/symfony-stg/app/Resources/views</argument>
       <argument>/\.[^.]+\.twig$/</argument>
     </service>
     <service id="debug.validator.inner" class="Symfony\Component\Validator\Validator\ValidatorInterface" public="false">
@@ -5094,42 +5067,42 @@
       <argument>true</argument>
     </service>
     <service id="cache.app.recorder_inner" class="Symfony\Component\Cache\Adapter\FilesystemAdapter" public="false">
-      <argument>OgpLWPnxDu</argument>
+      <argument>bjcnvcBsF8</argument>
       <argument>0</argument>
-      <argument>/var/www/html/symfony-stg/var/cache/dev/pools</argument>
+      <argument>/home/fabien/symfony-stg/var/cache/dev/pools</argument>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       </call>
     </service>
     <service id="cache.system.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
-      <argument>99+nS73aJH</argument>
+      <argument>A6JwJs-ZPK</argument>
       <argument>0</argument>
-      <argument>ZZ1B5kIGFOFNv8grpU387G</argument>
-      <argument>/var/www/html/symfony-stg/var/cache/dev/pools</argument>
+      <argument>jJOOn1sxeUeie0juQeA8Tv</argument>
+      <argument>/home/fabien/symfony-stg/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.validator.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
-      <argument>A3sgIyWMy+</argument>
+      <argument>ZCJ-UOXSe7</argument>
       <argument>0</argument>
-      <argument>ZZ1B5kIGFOFNv8grpU387G</argument>
-      <argument>/var/www/html/symfony-stg/var/cache/dev/pools</argument>
+      <argument>jJOOn1sxeUeie0juQeA8Tv</argument>
+      <argument>/home/fabien/symfony-stg/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.serializer.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
-      <argument>bMOJT+o15O</argument>
+      <argument>M-NDH9BvoX</argument>
       <argument>0</argument>
-      <argument>ZZ1B5kIGFOFNv8grpU387G</argument>
-      <argument>/var/www/html/symfony-stg/var/cache/dev/pools</argument>
+      <argument>jJOOn1sxeUeie0juQeA8Tv</argument>
+      <argument>/home/fabien/symfony-stg/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.annotations.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
-      <argument>tbqYzxIxzm</argument>
+      <argument>+YZxGJcNLZ</argument>
       <argument>0</argument>
-      <argument>ZZ1B5kIGFOFNv8grpU387G</argument>
-      <argument>/var/www/html/symfony-stg/var/cache/dev/pools</argument>
+      <argument>jJOOn1sxeUeie0juQeA8Tv</argument>
+      <argument>/home/fabien/symfony-stg/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -5248,17 +5221,10 @@
     <service id="console.command.doctrine_bundle_doctrinecachebundle_command_deletecommand" alias="doctrine_cache.delete_command" public="true"/>
     <service id="console.command.doctrine_bundle_doctrinecachebundle_command_flushcommand" alias="doctrine_cache.flush_command" public="true"/>
     <service id="console.command.doctrine_bundle_doctrinecachebundle_command_statscommand" alias="doctrine_cache.stats_command" public="true"/>
-    <service id="console.command.doctrine_bundle_migrationsbundle_command_migrationsdiffdoctrinecommand" alias="doctrine_migrations.diff_command" public="true"/>
-    <service id="console.command.doctrine_bundle_migrationsbundle_command_migrationsexecutedoctrinecommand" alias="doctrine_migrations.execute_command" public="true"/>
-    <service id="console.command.doctrine_bundle_migrationsbundle_command_migrationsgeneratedoctrinecommand" alias="doctrine_migrations.generate_command" public="true"/>
-    <service id="console.command.doctrine_bundle_migrationsbundle_command_migrationslatestdoctrinecommand" alias="doctrine_migrations.latest_command" public="true"/>
-    <service id="console.command.doctrine_bundle_migrationsbundle_command_migrationsmigratedoctrinecommand" alias="doctrine_migrations.migrate_command" public="true"/>
-    <service id="console.command.doctrine_bundle_migrationsbundle_command_migrationsstatusdoctrinecommand" alias="doctrine_migrations.status_command" public="true"/>
-    <service id="console.command.doctrine_bundle_migrationsbundle_command_migrationsversiondoctrinecommand" alias="doctrine_migrations.version_command" public="true"/>
     <service id="console.command.sensiolabs_security_command_securitycheckercommand" alias="sensio_distribution.security_checker.command" public="true"/>
     <service id="twig.loader" alias="twig.loader.filesystem"/>
-    <service id="service_locator._fpuy7b" alias="2_ServiceLocator~yo.ircd" public="false"/>
-    <service id="service_locator.ml7rum7" alias="1_ServiceLocator~cvx3ae1" public="false"/>
+    <service id="service_locator._fpuy7b" alias="2_ServiceLocator~zh9cgbw" public="false"/>
+    <service id="service_locator.ml7rum7" alias="1_ServiceLocator~xvf1kzy" public="false"/>
     <service id="validator" alias="debug.validator" public="true"/>
     <service id="event_dispatcher" alias="debug.event_dispatcher" public="true"/>
     <service id="controller_resolver" alias="debug.controller_resolver" public="false"/>

@@ -4,7 +4,6 @@ imports:
     - { resource: services.yml }
     - { resource: "@AcmeHomeBundle/Resources/config/services.yml" }
     - { resource: "@AcmeContactBundle/Resources/config/services.yml" }
-    - { resource: "@AcmeActeurBundle/Resources/config/services.yml" }
     - { resource: "@AcmeFilialeBundle/Resources/config/services.yml" }
     - { resource: "@AcmeWorkBundle/Resources/config/services.yml" }
 

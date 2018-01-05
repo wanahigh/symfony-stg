@@ -1,5 +1,8 @@
-acme_acteur_entity_actor:
-    resource: "@AcmeActeurBundle/Resources/config/routing/entity_actor.php"
-    prefix:   /entity_actor
+acme_acteur_entityacteurs:
+    resource: "@AcmeActeurBundle/Resources/config/routing/entityacteurs.php"
+    prefix:   /entityacteurs
 
 
+acme_acteur_homepage:
+    path:     /Acteurs
+    defaults: { _controller: AcmeActeurBundle:Acteur:index }

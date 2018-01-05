@@ -8,16 +8,18 @@
         {% for advert in adverts %}
 <table>
     <section>
-        <article id="two card">
+        <article id="two card-panel">
             <h1> {{ advert.title }}</h1>
-            <p>    <a href="{{ path('entity_advert_show',{ 'id': advert.id }) }}"><img src="{{ asset('uploads/images/' ~ advert.image) }}" height="150px" width="300px" ></a>
-                {% if advert.date %}{{ advert.date|date('Y-m-d H') }}{% endif %}
+            <p>    <a href="{{ path('entity_advert_show',{ 'id': advert.id }) }}">
+                    <img src="{{ asset('uploads/images/' ~ advert.image) }}" height="150px" width="300px" ></a>
+                <i class="material-icons">swatch</i>{% if advert.date %}{{ advert.date|date('Y-m-d H') }}{% endif %}
 
-                {{ advert.author }}
+                <i class="material-icons">book</i><strong style="color:dodgerblue;">{{ advert.author }}</strong>
+            <hr>
                 {{ advert.content }} </p>
 
         </article>
-        <a class="btn-large blue" href="{{ path('entity_advert_new') }}">New</a>
+
 
 
 
@@ -25,7 +27,17 @@
 
 </table> {% endfor %}</div>  <div class="text-center">{{ knp_pagination_render(adverts) }}</div>
 
-
+    <div class="fixed-action-btn horizontal">
+        <a href="{{ path('entity_advert_new') }}" class="btn-floating btn-large red">
+            <i class="large material-icons">mode_edit</i>
+        </a>
+        <ul>
+            <li><a  class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+            <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+            <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+            <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+        </ul>
+    </div>
 
 
     <style>@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
@@ -45,7 +57,7 @@
         }
 
         body {
-            background-color:lightslategrey;
+            background-color:dimgrey;
             font-size: 15px;
             color: #554E49;
             font-family: 'Roboto', sans-serif;

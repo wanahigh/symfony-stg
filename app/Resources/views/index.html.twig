@@ -7,14 +7,14 @@
     <div class="row">
         <div class="col s12">  <h2 class="header">La filière “Sports Mécaniques & Mobilité Durable”</h2></div>
         <hr>
-        <div class="col s6"><h7>Près de 100 entreprises dans la filière sur le territoire Alès Cévennes
+        <div class="col s6"><h4>Près de 100 entreprises dans la filière sur le territoire Alès Cévennes
             Face aux mutations économiques qu’a connu le bassin alésien, territoire
             fragilisé par le déclin de l’industrie minière à la fin des années 70, la fin des
             années 90 a marqué un tournant dans son évolution. Trois facteurs illustrent
             aujourd’hui la dynamique de redressement dans laquelle s’est engagé le
             territoire d’Alès Agglomération sous l’impulsion des acteurs publics et forces
             vives locales : une attractivité démographique retrouvée, une économie
-            dynamique en mutation et un cadre de vie attractif.</h7>
+            dynamique en mutation et un cadre de vie attractif.</h4>
             <div class="row"> <img id="pole1" src="{{ asset('../../../images/Pole-Mecanique-vueaerienne.jpg')}}"></div>
            </div>
         <div class="col s6"><h4>Tissé avec les premières filatures de vers à soie puis forgé avec les
@@ -101,7 +101,7 @@
         </ul>
     </div>
     <div class="card">
-        <img src="{{ asset('../../../images/demarche-structuration-01.png') }}">
+        <img id="dStructure" src="{{ asset('../../../images/demarche-structuration-01.png') }}">
 
     </div>
 
@@ -111,7 +111,7 @@
             $('.carousel').carousel({
                 padding: 200
             });
-            autoplay()
+            autoplay();
             function autoplay() {
                 $('.carousel').carousel('next');
                 setTimeout(autoplay, 4500);
